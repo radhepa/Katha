@@ -1,7 +1,7 @@
 import React, { type ReactNode } from 'react';
 import { ScrollView, Text, View, Pressable } from 'react-native';
-import { Check } from 'lucide-react-native';
-import { Screen } from '@/components/Screen';
+import { Check, Heart } from 'lucide-react-native';
+import { StackScreen } from '@/components/StackScreen';
 import { useTheme } from '@/theme/ThemeProvider';
 import { THEMES } from '@/theme/tokens';
 import { useSettingsStore } from '@/store/settings';
@@ -16,8 +16,6 @@ const LANGUAGES: { key: UiLang; label: string }[] = [
   { key: 'en', label: 'English' },
   { key: 'hi', label: 'Hindi' },
 ];
-
-const LANGUAGES_COMING_SOON = ['Gujarati', 'Tamil', 'Spanish'];
 
 // Preview sizes are fixed (not theme-scaled) so the three options always
 // show their relative difference, whatever size is currently active.
@@ -40,10 +38,27 @@ export function SettingsScreen() {
   }
 
   return (
-    <Screen title="Settings">
-      <ScrollView contentContainerStyle={{ padding: theme.spacing.md, paddingBottom: theme.spacing.xl, gap: theme.spacing.sm }}>
+    <StackScreen>
+      <ScrollView
+        contentContainerStyle={{
+          padding: theme.spacing.md,
+          paddingBottom: theme.spacing.xl,
+          gap: theme.spacing.sm,
+          width: '100%',
+          maxWidth: 680,
+          alignSelf: 'center',
+        }}
+      >
+        <Text
+          accessibilityRole="header"
+          style={{ fontFamily: theme.fonts.display, fontSize: theme.fontSize.xl, color: theme.colors.textPrimary }}
+        >
+          Settings
+        </Text>
+        <View style={{ height: 3, width: 32, borderRadius: 2, backgroundColor: theme.colors.accent, marginTop: -2, marginBottom: theme.spacing.xs, opacity: 0.85 }} />
         <SectionCard label="Appearance">
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10 }}>
+          {/* One row of five on any phone width. */}
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             {Object.values(THEMES).map((t) => {
               const active = t.id === settings.theme;
               return (
@@ -52,13 +67,13 @@ export function SettingsScreen() {
                   onPress={() => update('theme', t.id as ThemeId)}
                   accessibilityRole="button"
                   accessibilityLabel={`${t.label} theme${active ? ', selected' : ''}`}
-                  style={{ width: 58, alignItems: 'center', gap: 6 }}
+                  style={{ width: 56, alignItems: 'center', gap: 6 }}
                 >
                   <View
                     style={{
-                      width: 52,
-                      height: 52,
-                      borderRadius: 26,
+                      width: 48,
+                      height: 48,
+                      borderRadius: 24,
                       backgroundColor: t.colors.bgPrimary,
                       borderWidth: active ? 2.5 : 1,
                       borderColor: active ? theme.colors.accent : t.colors.border,
@@ -68,9 +83,9 @@ export function SettingsScreen() {
                   >
                     <View
                       style={{
-                        width: 26,
-                        height: 26,
-                        borderRadius: 13,
+                        width: 24,
+                        height: 24,
+                        borderRadius: 12,
                         backgroundColor: t.colors.accent,
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -176,9 +191,6 @@ export function SettingsScreen() {
                 </Pressable>
               );
             })}
-            {LANGUAGES_COMING_SOON.map((label) => (
-              <ComingSoonPill key={label} label={label} />
-            ))}
           </View>
         </SectionCard>
 
@@ -192,10 +204,10 @@ export function SettingsScreen() {
         </SectionCard>
 
         <SectionCard label="About">
-          <AboutLine title="Dharma Reader" body="Version 1.0" />
+          <AboutLine title="Katha" body="Version 1.0 · Katha (कथा) is Sanskrit for “story”." />
           <AboutLine
             title="Bhagavad Gita"
-            body="Sanskrit: Bombay recension (GRETIL). English: Annie Besant & Bhagavan Das, 1905."
+            body="Sanskrit: GRETIL e-text. English: Annie Besant, The Lord's Song, 4th edition, 1922."
           />
           <AboutLine
             title="Ramayana"
@@ -207,12 +219,16 @@ export function SettingsScreen() {
           />
           <AboutLine
             title="Sources"
-            body="All scripture texts are verified public-domain editions. Nothing is machine-generated."
+            body="Every verse and translation comes from a verified public-domain edition. Nothing in the scripture text is machine-translated."
+          />
+          <AboutLine
+            title="Characters & Events"
+            body="Short guides written for Katha to help you follow the story. They are commentary, not scripture, and each links to the passage so you can read the text itself."
           />
           <MadeByLine />
         </SectionCard>
       </ScrollView>
-    </Screen>
+    </StackScreen>
   );
 }
 
@@ -292,7 +308,7 @@ function AboutLine({ title, body, last }: { title: string; body: string; last?: 
 function MadeByLine() {
   const theme = useTheme();
   return (
-    <View style={{ marginTop: theme.spacing.xs }}>
+    <View style={{ marginTop: theme.spacing.xs, flexDirection: 'row', alignItems: 'center', gap: 5 }}>
       <Text
         style={{
           fontFamily: theme.fonts.ui,
@@ -300,57 +316,9 @@ function MadeByLine() {
           color: theme.colors.textSecondary,
         }}
       >
-        Made by Radhe with ❤️
+        Made by Radhe with
       </Text>
-    </View>
-  );
-}
-
-function ComingSoonPill({ label }: { label: string }) {
-  const theme = useTheme();
-  return (
-    <View
-      style={{
-        paddingHorizontal: 14,
-        paddingVertical: 8,
-        borderRadius: 999,
-        borderWidth: 1,
-        borderColor: theme.colors.border,
-        opacity: 0.55,
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 7,
-      }}
-    >
-      <Text
-        style={{
-          fontFamily: theme.fonts.ui,
-          fontSize: theme.fontSize.sm,
-          color: theme.colors.textSecondary,
-        }}
-      >
-        {label}
-      </Text>
-      <View
-        style={{
-          backgroundColor: theme.colors.accentSoft,
-          borderRadius: 4,
-          paddingHorizontal: 5,
-          paddingVertical: 2,
-        }}
-      >
-        <Text
-          style={{
-            fontFamily: theme.fonts.ui,
-            fontSize: 9,
-            color: theme.colors.accent,
-            textTransform: 'uppercase',
-            letterSpacing: 0.5,
-          }}
-        >
-          Soon
-        </Text>
-      </View>
+      <Heart size={13} strokeWidth={2} color={theme.colors.accent} fill={theme.colors.accent} />
     </View>
   );
 }

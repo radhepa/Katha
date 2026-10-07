@@ -11,12 +11,14 @@ interface Props {
   bookmarked: boolean;
   explained: boolean;
   fontScale?: number;
-  onPressExplain: () => void;
-  onToggleBookmark: () => void;
+  // Receive the verse so parents can pass one stable callback to every block
+  // (keeps memo() effective across thousands of verses).
+  onPressExplain: (verse: Verse) => void;
+  onToggleBookmark: (verse: Verse) => void;
 }
 
 const SANSKRIT_LINE_HEIGHT_MULT = 1.9;
-const BODY_LINE_HEIGHT_MULT = 1.6;
+const BODY_LINE_HEIGHT_MULT = 1.65;
 
 // Script-aware font family for the translation panel.
 // Sanskrit + Transliteration have their own rendering above; this is only for
@@ -34,7 +36,7 @@ function fontFamilyForTranslation(
     case 'ta':
       return fonts.tamil;
     case 'transliteration':
-      return fonts.bodyItalic;
+      return fonts.transliteration;
     default:
       return fonts.body;
   }
@@ -59,8 +61,8 @@ function VerseBlockImpl({
       {verse.book === 'gita' ? (
         <View style={{ width: 32, paddingTop: 6, alignItems: 'center' }}>
           <Pressable
-            onPress={onPressExplain}
-            hitSlop={8}
+            onPress={() => onPressExplain(verse)}
+            hitSlop={11}
             accessibilityRole="button"
             accessibilityLabel={`Open explanation for verse ${verse.verse}`}
             style={{
@@ -117,8 +119,9 @@ function VerseBlockImpl({
         <Text
           selectable
           style={{
-            fontFamily: theme.fonts.bodyItalic,
-            fontStyle: 'italic',
+            // The font file is already italic; adding fontStyle would make
+            // browsers slant it a second time.
+            fontFamily: theme.fonts.transliteration,
             fontSize: theme.fontSize.sm * fontScale,
             color: theme.colors.textSecondary,
             marginTop: theme.spacing.xs,
@@ -154,8 +157,8 @@ function VerseBlockImpl({
             {translationText ?? '— translation not available for the selected language —'}
           </Text>
           <Pressable
-            onPress={onToggleBookmark}
-            hitSlop={8}
+            onPress={() => onToggleBookmark(verse)}
+            hitSlop={12}
             accessibilityRole="button"
             accessibilityLabel={bookmarked ? 'Remove bookmark' : 'Add bookmark'}
             style={{ paddingTop: 2 }}

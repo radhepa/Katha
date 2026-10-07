@@ -52,10 +52,19 @@ export interface MahabharataVerse extends VerseBase {
 
 export type Verse = GitaVerse | RamayanaVerse | MahabharataVerse;
 
+// A Ramayana sarga or Mahabharata adhyaya inside a kanda/parva, with the id
+// of its first bundled verse (generated into index.json).
+export interface SubUnitIndex {
+  n: number;
+  first: string;
+  count: number;
+}
+
 export interface ChapterIndex {
   number: number;
   name: string;
   verse_count: number;
+  subunits?: SubUnitIndex[];
 }
 
 export interface BookMeta {
@@ -75,6 +84,16 @@ export interface BookMeta {
 export interface BookFile {
   meta: BookMeta;
   chapters: ChapterIndex[];
+  verses: Verse[];
+}
+
+// assets/data/index.json — built by scripts/build-index.mjs.
+export interface BookIndexFile {
+  books: Record<BookId, { meta: BookMeta; chapters: ChapterIndex[] }>;
+}
+
+// assets/data/daily.json — every daily_quote_eligible verse, in book order.
+export interface DailyFile {
   verses: Verse[];
 }
 

@@ -12,6 +12,7 @@ import {
   DMSans_700Bold,
 } from '@expo-google-fonts/dm-sans';
 import { NotoSerifDevanagari_400Regular } from '@expo-google-fonts/noto-serif-devanagari';
+import { NotoSerif_400Regular_Italic } from '@expo-google-fonts/noto-serif';
 import { NotoSerifGujarati_400Regular } from '@expo-google-fonts/noto-serif-gujarati';
 import { NotoSerifTamil_400Regular } from '@expo-google-fonts/noto-serif-tamil';
 import { useSettingsStore } from '@/store/settings';
@@ -27,6 +28,10 @@ const UI_FONTS = {
   // Devanagari covers Hindi + Sanskrit — Sanskrit is always shown in the reader,
   // so this counts as a "UI" requirement and ships with the base bundle.
   NotoSerifDevanagari: NotoSerifDevanagari_400Regular,
+  // Transliteration needs the full IAST set (ṁ ṃ ṇ ṣ ṭ ḍ ḥ ṛ ...). Lora has
+  // none of the dotted letters, so browsers patch them together from parts
+  // and the dots land in the wrong place. Noto Serif carries them all.
+  'NotoSerif-Italic': NotoSerif_400Regular_Italic,
 };
 
 // Lazy fonts — only loaded if user picks that language.

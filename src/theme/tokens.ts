@@ -109,6 +109,8 @@ export const FONTS = {
   display: 'Lora-Bold',
   body: 'Lora-Regular',
   bodyItalic: 'Lora-Italic',
+  // Romanised Sanskrit (IAST) — see fonts.ts for why this isn't Lora.
+  transliteration: 'NotoSerif-Italic',
   ui: 'DMSans-Medium',
   uiBold: 'DMSans-Bold',
   devanagari: 'NotoSerifDevanagari',

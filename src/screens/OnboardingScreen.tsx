@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Animated, Platform, Pressable, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { BookOpen, Flame, Info } from 'lucide-react-native';
+import { BookOpen, Flame, Info, Users } from 'lucide-react-native';
 import { useTheme } from '@/theme/ThemeProvider';
 import { useSettingsStore } from '@/store/settings';
 import { saveSetting } from '@/db/settings';
@@ -9,7 +9,7 @@ import { saveSetting } from '@/db/settings';
 const SLIDES = [
   {
     Icon: BookOpen,
-    title: 'Dharma Reader',
+    title: 'Katha',
     body: 'The Bhagavad Gita, Ramayana, and Mahabharata — Sanskrit, transliteration, and English translation in every verse.',
     sub: 'Three sacred texts. One place.',
   },
@@ -23,6 +23,12 @@ const SLIDES = [
     Icon: Info,
     title: 'Understand as you read',
     body: 'The Bhagavad Gita includes an explanation for every verse. Tap the ⓘ button while reading to see what each verse means in context.',
+    sub: null,
+  },
+  {
+    Icon: Users,
+    title: 'Know who’s who',
+    body: 'Characters and Events explain who everyone is, why things happen, and the hard choices at the heart of each story — with a link to the passage itself.',
     sub: null,
   },
 ] as const;

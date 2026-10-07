@@ -1,22 +1,36 @@
 import React, { useCallback, useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { Clock, Flame } from 'lucide-react-native';
-import { useFocusEffect } from '@react-navigation/native';
+import { Bookmark, Clock, Flame, Settings as IconSettings } from 'lucide-react-native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { Screen } from '@/components/Screen';
+import { HeaderIconButton } from '@/components/StackScreen';
 import { useTheme } from '@/theme/ThemeProvider';
 import { getCurrentStreak, getWeeklyConsistency } from '@/db/streak';
 import { countVersesRead } from '@/db/progress';
 import { getTotalReadingSeconds } from '@/db/readingTime';
 import { formatReadingTime } from '@/lib/format';
-import { getBook } from '@/lib/scripture';
+import { getBookMeta } from '@/lib/scripture';
 import type { BookId } from '@/types/scripture';
 
 const BOOKS: BookId[] = ['gita', 'ramayana', 'mahabharata'];
 
 const ZERO: Record<BookId, number> = { gita: 0, ramayana: 0, mahabharata: 0 };
 
+// Single-letter day names for the 7-day row, oldest first, ending today.
+function weekdayInitials(now = new Date()): string[] {
+  const out: string[] = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(now);
+    d.setDate(now.getDate() - i);
+    out.push(d.toLocaleDateString('en-US', { weekday: 'narrow' }));
+  }
+  return out;
+}
+
 export function ProgressScreen() {
   const theme = useTheme();
+  const navigation = useNavigation<any>();
+  const days = weekdayInitials();
   const [streak, setStreak] = useState(0);
   const [week, setWeek] = useState<boolean[]>([false, false, false, false, false, false, false]);
   const [counts, setCounts] = useState<Record<BookId, number>>(ZERO);
@@ -48,7 +62,19 @@ export function ProgressScreen() {
   );
 
   return (
-    <Screen title="Progress">
+    <Screen
+      title="Progress"
+      right={
+        <>
+          <HeaderIconButton label="Bookmarks" onPress={() => navigation.navigate('Bookmarks')}>
+            <Bookmark size={21} strokeWidth={1.5} color={theme.colors.textSecondary} />
+          </HeaderIconButton>
+          <HeaderIconButton label="Settings" onPress={() => navigation.navigate('Settings')}>
+            <IconSettings size={21} strokeWidth={1.5} color={theme.colors.textSecondary} />
+          </HeaderIconButton>
+        </>
+      }
+    >
       <ScrollView contentContainerStyle={{ padding: theme.spacing.md, paddingBottom: theme.spacing.xl }}>
         <View
           style={{
@@ -78,15 +104,20 @@ export function ProgressScreen() {
           }}
         >
           {week.map((hit, i) => (
-            <View
-              key={i}
-              style={{
-                width: 28,
-                height: 28,
-                borderRadius: 6,
-                backgroundColor: hit ? theme.colors.accent : theme.colors.accentSoft,
-              }}
-            />
+            <View key={i} style={{ alignItems: 'center', gap: 4 }}>
+              <View
+                accessibilityLabel={`${days[i]}: ${hit ? 'goal met' : 'goal not met'}`}
+                style={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: 8,
+                  backgroundColor: hit ? theme.colors.accent : theme.colors.accentSoft,
+                  borderWidth: i === 6 ? 1.5 : 0,
+                  borderColor: theme.colors.accent,
+                }}
+              />
+              <Text style={{ fontFamily: theme.fonts.ui, fontSize: 10, color: theme.colors.textSecondary }}>{days[i]}</Text>
+            </View>
           ))}
         </View>
 
@@ -103,8 +134,8 @@ export function ProgressScreen() {
           Per book
         </Text>
         {BOOKS.map((b) => {
-          const book = getBook(b);
-          const total = book.meta.total_verses;
+          const meta = getBookMeta(b);
+          const total = meta.total_verses;
           const read = counts[b];
           const pct = total > 0 ? Math.round((read / total) * 100) : 0;
           return (
@@ -130,7 +161,7 @@ export function ProgressScreen() {
                     color: theme.colors.textPrimary,
                   }}
                 >
-                  {book.meta.title}
+                  {meta.title}
                 </Text>
                 <Text
                   style={{
@@ -139,7 +170,7 @@ export function ProgressScreen() {
                     color: theme.colors.textSecondary,
                   }}
                 >
-                  {read} of {total} ({pct}%)
+                  {read.toLocaleString()} of {total.toLocaleString()} ({pct}%)
                 </Text>
               </View>
               <View

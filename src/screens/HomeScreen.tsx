@@ -1,23 +1,34 @@
 import React, { useCallback, useState } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { BookOpen, ChevronRight, Flame } from 'lucide-react-native';
+import { BookOpen, CalendarDays, ChevronRight, Flame, Scale, Settings as IconSettings } from 'lucide-react-native';
 import { Screen } from '@/components/Screen';
 import { AnimatedCard } from '@/components/AnimatedCard';
 import { GoalRing } from '@/components/GoalRing';
+import { HeaderIconButton } from '@/components/StackScreen';
+import { SectionLabel } from '@/components/SectionLabel';
 import { useTheme } from '@/theme/ThemeProvider';
 import { useSettingsStore } from '@/store/settings';
-import { useReaderStore } from '@/store/reader';
-import { getBook, getDailyVerseId, getVerseById, resolveTranslation, translationKeyForLanguage, verseShortReference } from '@/lib/scripture';
+import {
+  getBookMeta,
+  getDailyVerse,
+  positionLabel,
+  resolveTranslation,
+  translationKeyForLanguage,
+  verseShortReference,
+} from '@/lib/scripture';
+import { getDailyEvent } from '@/lib/companions';
+import { openPassage } from '@/lib/openPassage';
 import { getNextHolidayWithin, daysUntil } from '@/lib/calendar';
 import { getCurrentStreak, countVersesReadToday } from '@/db/streak';
 import { getLastPosition } from '@/db/position';
 import type { BookId } from '@/types/scripture';
 
+const BOOKS: BookId[] = ['gita', 'ramayana', 'mahabharata'];
+
 interface ContinueEntry {
   bookId: BookId;
   verseId: string;
-  chapter: number;
   label: string;
 }
 
@@ -46,49 +57,38 @@ export function HomeScreen() {
   const language = useSettingsStore((s) => s.settings.language);
   const dailyGoal = useSettingsStore((s) => s.settings.daily_goal);
   const preferredTranslation = translationKeyForLanguage(language);
-  const openBook = useReaderStore((s) => s.openBook);
 
   const [streak, setStreak] = useState(0);
   const [todayCount, setTodayCount] = useState(0);
   const [continueEntry, setContinueEntry] = useState<ContinueEntry | null>(null);
 
   // Refresh streak, today's count, and last reading position whenever Home
-  // regains focus, so a reading session is reflected the moment the user
-  // comes back.
+  // regains focus, so a reading session shows the moment the reader returns.
   useFocusEffect(
     useCallback(() => {
       let cancelled = false;
       (async () => {
-        const bookIds: BookId[] = ['gita', 'ramayana', 'mahabharata'];
         const [s, n, ...positions] = await Promise.all([
           getCurrentStreak(),
           countVersesReadToday(),
-          ...bookIds.map((id) => getLastPosition(id)),
+          ...BOOKS.map((id) => getLastPosition(id)),
         ]);
         if (cancelled) return;
         setStreak(s as number);
         setTodayCount(n as number);
-
-        // Find the most recently accessed book with a saved verse position.
-        type PosResult = { verseId: string; updatedAt: number } | null;
-        const entries = (positions as PosResult[])
-          .map((pos, i) => {
-            if (!pos) return null;
-            const v = getVerseById(pos.verseId);
-            if (!v) return null;
-            const id = bookIds[i];
-            const book = getBook(id);
-            const ch = v.book === 'gita' ? v.chapter : v.book === 'ramayana' ? v.kanda : v.parva;
-            const label =
-              v.verse === 0
-                ? `${book.meta.structure_label} ${ch} · Invocation`
-                : `${book.meta.structure_label} ${ch}, Verse ${v.verse}`;
-            return { bookId: id, verseId: pos.verseId, chapter: ch, label, updatedAt: pos.updatedAt };
-          })
-          .filter(Boolean) as (ContinueEntry & { updatedAt: number })[];
-
-        entries.sort((a, b) => b.updatedAt - a.updatedAt);
-        setContinueEntry(entries[0] ? { bookId: entries[0].bookId, verseId: entries[0].verseId, chapter: entries[0].chapter, label: entries[0].label } : null);
+        // Most recently read book wins. Labels come from the verse id, so no
+        // scripture file is loaded just to draw this card.
+        type Pos = { verseId: string; updatedAt: number } | null;
+        let best: (ContinueEntry & { updatedAt: number }) | null = null;
+        (positions as Pos[]).forEach((pos, i) => {
+          if (!pos) return;
+          const label = positionLabel(pos.verseId);
+          if (!label) return;
+          if (!best || pos.updatedAt > best.updatedAt) {
+            best = { bookId: BOOKS[i], verseId: pos.verseId, label, updatedAt: pos.updatedAt };
+          }
+        });
+        setContinueEntry(best);
       })();
       return () => {
         cancelled = true;
@@ -104,35 +104,57 @@ export function HomeScreen() {
     day: 'numeric',
   })} · ${hinduMonthApprox(now)}`;
 
-  const books: BookId[] = ['gita', 'ramayana', 'mahabharata'];
   const upcomingHoliday = getNextHolidayWithin(7, now);
+  const story = getDailyEvent(now);
+  const goalMet = todayCount >= dailyGoal;
 
   return (
     <Screen>
-      <ScrollView contentContainerStyle={{ padding: theme.spacing.md, paddingBottom: theme.spacing.xl }}>
-        <Text
-          style={{
-            fontFamily: theme.fonts.display,
-            fontSize: theme.fontSize.xxl,
-            color: theme.colors.textPrimary,
-            marginBottom: 6,
-          }}
-        >
-          {greeting}{userName ? `, ${userName}` : ''}
-        </Text>
-        <Text
-          style={{
-            fontFamily: theme.fonts.ui,
-            fontSize: theme.fontSize.sm,
-            color: theme.colors.textSecondary,
-            marginBottom: theme.spacing.lg,
-          }}
-        >
-          {dateLine}
-        </Text>
+      <ScrollView
+        contentContainerStyle={{
+          padding: theme.spacing.md,
+          paddingBottom: theme.spacing.xl,
+          width: '100%',
+          maxWidth: 680,
+          alignSelf: 'center',
+        }}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+          <View style={{ flex: 1 }}>
+            <Text
+              accessibilityRole="header"
+              style={{
+                fontFamily: theme.fonts.display,
+                fontSize: theme.fontSize.xxl,
+                lineHeight: theme.fontSize.xxl * 1.2,
+                color: theme.colors.textPrimary,
+                marginBottom: 6,
+              }}
+            >
+              {greeting}
+              {userName ? `, ${userName}` : ''}
+            </Text>
+            <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.sm, color: theme.colors.textSecondary }}>
+              {dateLine}
+            </Text>
+          </View>
+          <View style={{ flexDirection: 'row', marginRight: -10, marginTop: -4 }}>
+            <HeaderIconButton label="Festival calendar" onPress={() => navigation.navigate('Calendar')}>
+              <CalendarDays size={21} strokeWidth={1.5} color={theme.colors.textSecondary} />
+            </HeaderIconButton>
+            <HeaderIconButton label="Settings" onPress={() => navigation.navigate('Settings')}>
+              <IconSettings size={21} strokeWidth={1.5} color={theme.colors.textSecondary} />
+            </HeaderIconButton>
+          </View>
+        </View>
 
         {/* Streak badge inside the daily goal ring — prominent, centered. */}
-        <View style={{ alignItems: 'center', marginBottom: theme.spacing.lg }}>
+        <Pressable
+          onPress={() => navigation.navigate('Progress')}
+          accessibilityRole="button"
+          accessibilityLabel={`${streak} day streak. ${todayCount} of ${dailyGoal} verses today. Open progress`}
+          style={{ alignItems: 'center', marginVertical: theme.spacing.lg }}
+        >
           <GoalRing progress={dailyGoal > 0 ? todayCount / dailyGoal : 0}>
             <Flame
               color={theme.colors.accent}
@@ -140,14 +162,7 @@ export function HomeScreen() {
               size={22}
               strokeWidth={1.5}
             />
-            <Text
-              style={{
-                fontFamily: theme.fonts.display,
-                fontSize: theme.fontSize.xl,
-                color: theme.colors.textPrimary,
-                marginTop: 2,
-              }}
-            >
+            <Text style={{ fontFamily: theme.fonts.display, fontSize: theme.fontSize.xl, color: theme.colors.textPrimary, marginTop: 2 }}>
               {streak}
             </Text>
             <Text
@@ -162,27 +177,17 @@ export function HomeScreen() {
               day streak
             </Text>
           </GoalRing>
-          <Text
-            style={{
-              fontFamily: theme.fonts.ui,
-              fontSize: theme.fontSize.sm,
-              color: theme.colors.textSecondary,
-              marginTop: theme.spacing.xs,
-            }}
-          >
-            {todayCount >= dailyGoal
-              ? `Goal met · ${todayCount} verses today`
-              : `${todayCount} of ${dailyGoal} verses today`}
+          <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.sm, color: theme.colors.textSecondary, marginTop: theme.spacing.xs }}>
+            {goalMet ? `Goal met · ${todayCount} verses today` : `${todayCount} of ${dailyGoal} verses today`}
           </Text>
-        </View>
+        </Pressable>
 
         {/* Continue Reading shortcut — shown once a book has a saved position. */}
         {continueEntry ? (
           <AnimatedCard
-            onPress={() => {
-              openBook(continueEntry.bookId, continueEntry.chapter, continueEntry.verseId);
-              requestAnimationFrame(() => navigation.navigate('Reader'));
-            }}
+            onPress={() => openPassage(navigation, continueEntry.verseId)}
+            accessibilityRole="button"
+            accessibilityLabel={`Continue reading ${getBookMeta(continueEntry.bookId).title}, ${continueEntry.label}`}
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -192,8 +197,8 @@ export function HomeScreen() {
               borderWidth: 1,
               borderRadius: 16,
               paddingHorizontal: theme.spacing.md,
-              paddingVertical: theme.spacing.sm,
-              marginBottom: theme.spacing.md,
+              paddingVertical: 14,
+              marginBottom: theme.spacing.lg,
             }}
           >
             <BookOpen size={20} strokeWidth={1.5} color={theme.colors.accent} />
@@ -207,57 +212,31 @@ export function HomeScreen() {
                   letterSpacing: 1,
                 }}
               >
-                Continue Reading
+                Continue reading
               </Text>
-              <Text
-                style={{
-                  fontFamily: theme.fonts.body,
-                  fontSize: theme.fontSize.sm,
-                  color: theme.colors.textPrimary,
-                  marginTop: 2,
-                }}
-              >
-                {getBook(continueEntry.bookId).meta.title} · {continueEntry.label}
+              <Text style={{ fontFamily: theme.fonts.display, fontSize: theme.fontSize.base, color: theme.colors.textPrimary, marginTop: 2 }}>
+                {getBookMeta(continueEntry.bookId).title}
+              </Text>
+              <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.sm, color: theme.colors.textSecondary, marginTop: 1 }}>
+                {continueEntry.label}
               </Text>
             </View>
-            <ChevronRight size={16} strokeWidth={1.5} color={theme.colors.accent} />
+            <ChevronRight size={18} strokeWidth={1.5} color={theme.colors.accent} />
           </AnimatedCard>
         ) : null}
 
-        <Text
-          style={{
-            fontFamily: theme.fonts.ui,
-            fontSize: theme.fontSize.xs,
-            color: theme.colors.textSecondary,
-            textTransform: 'uppercase',
-            letterSpacing: 1,
-            marginBottom: theme.spacing.xs,
-          }}
-        >
-          Today's verses
-        </Text>
+        <SectionLabel>Today's verses</SectionLabel>
 
-        {books.map((bookId) => {
-          const verseId = getDailyVerseId(bookId, now);
-          const verse = verseId ? getVerseById(verseId) : null;
+        {BOOKS.map((bookId) => {
+          const verse = getDailyVerse(bookId, now);
           if (!verse) return null;
-          const book = getBook(bookId);
           const trans = resolveTranslation(verse, preferredTranslation);
           return (
             <AnimatedCard
               key={bookId}
-              onPress={() => {
-                openBook(
-                  bookId,
-                  verse.book === 'gita'
-                    ? verse.chapter
-                    : verse.book === 'ramayana'
-                      ? verse.kanda
-                      : verse.parva,
-                  verse.id
-                );
-                requestAnimationFrame(() => navigation.navigate('Reader'));
-              }}
+              onPress={() => openPassage(navigation, verse.id)}
+              accessibilityRole="button"
+              accessibilityLabel={`${getBookMeta(bookId).title}, ${verseShortReference(verse)}. Read in context`}
               style={{
                 backgroundColor: theme.colors.bgSecondary,
                 borderColor: theme.colors.border,
@@ -267,38 +246,15 @@ export function HomeScreen() {
                 marginBottom: theme.spacing.sm,
               }}
             >
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  marginBottom: 12,
-                }}
-              >
-                <View
-                  style={{
-                    backgroundColor: theme.colors.accentSoft,
-                    paddingHorizontal: 10,
-                    paddingVertical: 3,
-                    borderRadius: 999,
-                  }}
-                >
-                  <Text
-                    style={{
-                      fontFamily: theme.fonts.ui,
-                      fontSize: theme.fontSize.xs,
-                      color: theme.colors.textPrimary,
-                    }}
-                  >
-                    {book.meta.title}
+              <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, gap: 8 }}>
+                <View style={{ backgroundColor: theme.colors.accentSoft, paddingHorizontal: 10, paddingVertical: 3, borderRadius: 999 }}>
+                  <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.xs, color: theme.colors.textPrimary }}>
+                    {getBookMeta(bookId).title}
                   </Text>
                 </View>
                 <Text
-                  style={{
-                    fontFamily: theme.fonts.ui,
-                    fontSize: theme.fontSize.xs,
-                    color: theme.colors.textSecondary,
-                  }}
+                  numberOfLines={1}
+                  style={{ flexShrink: 1, fontFamily: theme.fonts.ui, fontSize: theme.fontSize.xs, color: theme.colors.textSecondary }}
                 >
                   {verseShortReference(verse)}
                 </Text>
@@ -316,7 +272,7 @@ export function HomeScreen() {
                 {verse.sanskrit}
               </Text>
               <Text
-                numberOfLines={2}
+                numberOfLines={3}
                 style={{
                   fontFamily: theme.fonts.body,
                   fontSize: theme.fontSize.base,
@@ -328,13 +284,7 @@ export function HomeScreen() {
                 {trans?.text ?? '—'}
               </Text>
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
-                <Text
-                  style={{
-                    fontFamily: theme.fonts.ui,
-                    fontSize: theme.fontSize.sm,
-                    color: theme.colors.accent,
-                  }}
-                >
+                <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.sm, color: theme.colors.accent }}>
                   Read in context
                 </Text>
                 <ChevronRight size={15} strokeWidth={2} color={theme.colors.accent} />
@@ -343,10 +293,72 @@ export function HomeScreen() {
           );
         })}
 
+        {/* One story moment a day — a doorway into Events. */}
+        {story ? (
+          <>
+            <SectionLabel style={{ marginTop: theme.spacing.md }}>From the epics</SectionLabel>
+            <AnimatedCard
+              onPress={() => navigation.navigate('Event', { id: story.id })}
+              accessibilityRole="button"
+              accessibilityLabel={`${story.title}. Open event`}
+              style={{
+                borderRadius: 16,
+                padding: theme.spacing.md,
+                borderWidth: 1,
+                borderColor: theme.colors.accent + '44',
+                backgroundColor: theme.colors.bgSecondary,
+                marginBottom: theme.spacing.sm,
+              }}
+            >
+              <Text
+                style={{
+                  fontFamily: theme.fonts.ui,
+                  fontSize: theme.fontSize.xs,
+                  color: theme.colors.accent,
+                  textTransform: 'uppercase',
+                  letterSpacing: 1,
+                  marginBottom: 4,
+                }}
+              >
+                {getBookMeta(story.book).title} · {story.where}
+              </Text>
+              <Text style={{ fontFamily: theme.fonts.display, fontSize: theme.fontSize.lg, color: theme.colors.textPrimary, marginBottom: 8 }}>
+                {story.title}
+              </Text>
+              {story.dilemma ? (
+                <View style={{ flexDirection: 'row', gap: 8, marginBottom: 12 }}>
+                  <Scale size={16} strokeWidth={1.6} color={theme.colors.accent} style={{ marginTop: 3 }} />
+                  <Text
+                    style={{
+                      flex: 1,
+                      fontFamily: theme.fonts.bodyItalic,
+                      fontStyle: 'italic',
+                      fontSize: theme.fontSize.base,
+                      lineHeight: theme.fontSize.base * 1.55,
+                      color: theme.colors.textPrimary,
+                    }}
+                  >
+                    {story.dilemma.title}
+                  </Text>
+                </View>
+              ) : null}
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
+                <Text style={{ fontFamily: theme.fonts.ui, fontSize: theme.fontSize.sm, color: theme.colors.accent }}>
+                  What happens, and why
+                </Text>
+                <ChevronRight size={15} strokeWidth={2} color={theme.colors.accent} />
+              </View>
+            </AnimatedCard>
+          </>
+        ) : null}
+
         {upcomingHoliday ? (
-          <View
+          <AnimatedCard
+            onPress={() => navigation.navigate('Calendar')}
+            accessibilityRole="button"
+            accessibilityLabel={`${upcomingHoliday.name}, upcoming. Open festival calendar`}
             style={{
-              marginTop: theme.spacing.md,
+              marginTop: theme.spacing.sm,
               borderRadius: 16,
               padding: theme.spacing.md,
               backgroundColor: theme.colors.accentSoft,
@@ -362,15 +374,12 @@ export function HomeScreen() {
                 marginBottom: 4,
               }}
             >
-              Upcoming · in {daysUntil(upcomingHoliday.date, now)} days
+              {(() => {
+                const n = daysUntil(upcomingHoliday.date, now);
+                return n === 0 ? 'Festival · today' : n === 1 ? 'Festival · tomorrow' : `Festival · in ${n} days`;
+              })()}
             </Text>
-            <Text
-              style={{
-                fontFamily: theme.fonts.display,
-                fontSize: theme.fontSize.lg,
-                color: theme.colors.textPrimary,
-              }}
-            >
+            <Text style={{ fontFamily: theme.fonts.display, fontSize: theme.fontSize.lg, color: theme.colors.textPrimary }}>
               {upcomingHoliday.name}
             </Text>
             <Text
@@ -384,7 +393,7 @@ export function HomeScreen() {
             >
               {upcomingHoliday.description_en}
             </Text>
-          </View>
+          </AnimatedCard>
         ) : null}
       </ScrollView>
     </Screen>

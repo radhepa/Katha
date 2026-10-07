@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "dharma-reader",
-    "slug": "dharma-reader",
+    "name": "Katha",
+    "slug": "katha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#FAF8F4",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,13 +19,27 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "Katha",
+      "shortName": "Katha",
+      "description": "The Bhagavad Gita, Ramayana and Mahabharata in Sanskrit, transliteration and English.",
+      "themeColor": "#FAF8F4",
+      "backgroundColor": "#FAF8F4"
     },
     "plugins": [
       "expo-sqlite",
       "expo-font",
-      "expo-splash-screen",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAF8F4"
+        }
+      ],
       "expo-asset"
-    ]
+    ],
+    "scheme": "katha"
   }
 }

@@ -1,0 +1,1118 @@
+{
+  "groups": [
+    { "id": "mbh-krishna", "book": "mahabharata", "label": "Krishna and the storytellers" },
+    { "id": "mbh-pandavas", "book": "mahabharata", "label": "The Pandavas" },
+    { "id": "mbh-kauravas", "book": "mahabharata", "label": "The Kaurava side" },
+    { "id": "mbh-elders", "book": "mahabharata", "label": "Elders and teachers" },
+    { "id": "mbh-others", "book": "mahabharata", "label": "Allies, rivals and others" },
+    { "id": "ram-ayodhya", "book": "ramayana", "label": "Ayodhya" },
+    { "id": "ram-forest", "book": "ramayana", "label": "Sages and the forest" },
+    { "id": "ram-kishkindha", "book": "ramayana", "label": "Kishkindha" },
+    { "id": "ram-lanka", "book": "ramayana", "label": "Lanka" }
+  ],
+  "characters": [
+    {
+      "id": "krishna",
+      "name": "Krishna",
+      "sanskrit": "कृष्ण",
+      "aka": ["Vasudeva", "Keshava", "Govinda", "Madhava", "Janardana", "Hrishikesha"],
+      "role": "Prince of the Yadavas, Arjuna’s friend and charioteer, and the teacher of the Gita",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-krishna",
+      "summary": "Krishna is a prince of the Yadava clan of Dvaraka and a cousin of the Pandavas — his father Vasudeva is Kunti’s brother. In the Mahabharata he is at once a shrewd statesman, a loyal friend and, for many readers, God in human form.\n\nHe stands beside the Pandavas from Draupadi’s wedding onward, carries their last offer of peace to Hastinapura, and when war comes refuses to take up arms, serving instead as Arjuna’s charioteer. On the first morning of battle, when Arjuna collapses in grief, Krishna’s answer becomes the Bhagavad Gita.",
+      "dilemma": {
+        "title": "Victory by any means?",
+        "body": "Several of the war’s decisive blows land on Krishna’s advice or with his blessing: Bhishma is brought down from behind Shikhandi, Drona is broken by a half-truth about his son, Karna is struck while freeing his chariot wheel, and Duryodhana is felled by a blow below the waist. His critics in the epic — Duryodhana among them — call this treachery.\n\nKrishna’s answer is that these warriors could not be beaten fairly and had themselves fought for an unjust cause; that dharma looks to what an act does for the world, not only to the rules of single combat. The epic lets both views stand, and readers have argued over them ever since."
+      },
+      "relations": [
+        { "id": "arjuna", "label": "Friend, cousin, and the one he guides" },
+        { "id": "draupadi", "label": "Friend and protector" },
+        { "id": "yudhishthira", "label": "Cousin he advises" },
+        { "id": "kunti", "label": "His father’s sister" },
+        { "id": "duryodhana", "label": "Turned down his offer of peace" },
+        { "id": "karna", "label": "Told him the secret of his birth" }
+      ],
+      "read": [
+        { "verseId": "gita_2_11", "label": "Begins the teaching of the Gita" },
+        { "verseId": "mbh_4_129_1", "label": "Shows his cosmic form in the Kaurava court" }
+      ]
+    },
+    {
+      "id": "vyasa",
+      "name": "Vyasa",
+      "sanskrit": "व्यास",
+      "aka": ["Krishna Dvaipayana", "Vedavyasa"],
+      "role": "Sage, author of the Mahabharata, and grandfather of both sides",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-krishna",
+      "summary": "Vyasa is both the epic’s author and a character in it. Born to Satyavati on an island in the Yamuna — hence the name Dvaipayana — he is remembered as the sage who arranged the Vedas.\n\nAt his mother’s request he fathers Dhritarashtra, Pandu and Vidura to continue the Kuru line, so he is grandfather to the Kauravas and Pandavas alike. He appears at moments of crisis to advise, warn and console, and gives Sanjaya the divine sight to report the war to the blind king.",
+      "relations": [
+        { "id": "satyavati", "label": "His mother" },
+        { "id": "dhritarashtra", "label": "His son" },
+        { "id": "pandu", "label": "His son" },
+        { "id": "vidura", "label": "His son" },
+        { "id": "sanjaya", "label": "Gave him divine sight" }
+      ]
+    },
+    {
+      "id": "sanjaya",
+      "name": "Sanjaya",
+      "sanskrit": "संजय",
+      "aka": [],
+      "role": "Dhritarashtra’s charioteer, and the narrator of the Gita",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-krishna",
+      "summary": "Sanjaya is the blind king’s charioteer and counsellor. Before the war, Vyasa grants him divine vision so that he can see everything on the battlefield, and report it to Dhritarashtra.\n\nThe whole Bhagavad Gita reaches us through him: he hears Krishna and Arjuna’s conversation and repeats it to the king, ending with his own conviction that wherever Krishna and Arjuna stand, there will be prosperity and victory.",
+      "relations": [
+        { "id": "dhritarashtra", "label": "The king he serves and narrates to" },
+        { "id": "vyasa", "label": "Gave him divine sight" },
+        { "id": "krishna", "label": "Whose words he relays" }
+      ],
+      "read": [
+        { "verseId": "gita_1_2", "label": "Begins describing the battlefield" },
+        { "verseId": "gita_18_74", "label": "His closing words" }
+      ]
+    },
+    {
+      "id": "yudhishthira",
+      "name": "Yudhishthira",
+      "sanskrit": "युधिष्ठिर",
+      "aka": ["Dharmaraja", "Ajatashatru"],
+      "role": "Eldest of the Pandavas, the king who would not lie",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "The eldest son of Kunti, born of the god Dharma, Yudhishthira is famous for his devotion to truth and righteousness — so famous that the Yaksha at the lake tests him with riddles about dharma, and he passes.\n\nHe is also the man who gambles everything away. Challenged to dice by Shakuni, he stakes his wealth, his kingdom, his brothers, himself and finally Draupadi, and loses them all. The exile, the war and its aftermath flow from that afternoon. When the war is won he is so overcome by the slaughter that he wants to give up the throne for the forest, and Bhishma, dying on his bed of arrows, spends the Shanti Parva teaching him how to rule.",
+      "dilemma": {
+        "title": "A righteous man at the gambling table",
+        "body": "Why would the most principled of the brothers keep playing a game he knew was rigged? The text gives him reasons: a king of his code did not refuse a challenge, and the summons came from his uncle the king, whom he was bound to obey. It also shows a weakness — he was fond of the game.\n\nThe episode asks how far obedience and honour should go when they lead to ruin, and whether a code followed rigidly can become its own kind of blindness."
+      },
+      "relations": [
+        { "id": "bhima", "label": "Brother" },
+        { "id": "arjuna", "label": "Brother" },
+        { "id": "draupadi", "label": "Wife, whom he staked at dice" },
+        { "id": "kunti", "label": "Mother" },
+        { "id": "krishna", "label": "Cousin and counsellor" },
+        { "id": "shakuni", "label": "Beat him at dice" },
+        { "id": "bhishma", "label": "Grandsire who teaches him to rule" },
+        { "id": "karna", "label": "Elder brother he never knew" }
+      ],
+      "read": [
+        { "verseId": "mbh_3_296_11", "label": "The Yaksha at the lake" },
+        { "verseId": "mbh_6_56_3", "label": "Asks Bhishma about the duties of kings" }
+      ]
+    },
+    {
+      "id": "bhima",
+      "name": "Bhima",
+      "sanskrit": "भीम",
+      "aka": ["Bhimasena", "Vrikodara"],
+      "role": "Second of the Pandavas, the strongest man alive",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "The second son of Kunti, born of the wind god Vayu, Bhima has enormous strength and an appetite to match — Vrikodara means ‘wolf-bellied’. He carries his mother and brothers out of the burning house of lac, kills the demons Hidimba and Baka, and is the brother least patient with Yudhishthira’s restraint.\n\nIn the dice hall, watching Draupadi dragged in by her hair, he swears to drink Dushasana’s blood and to break Duryodhana’s thigh. He keeps both vows in the war.",
+      "relations": [
+        { "id": "yudhishthira", "label": "Elder brother" },
+        { "id": "arjuna", "label": "Younger brother" },
+        { "id": "draupadi", "label": "Wife, whose insult he vows to avenge" },
+        { "id": "duryodhana", "label": "Rival since boyhood" },
+        { "id": "dushasana", "label": "Sworn enemy" },
+        { "id": "kunti", "label": "Mother" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_136_18", "label": "Carries his family out of the burning house" }
+      ]
+    },
+    {
+      "id": "arjuna",
+      "name": "Arjuna",
+      "sanskrit": "अर्जुन",
+      "aka": ["Partha", "Dhananjaya", "Gudakesha", "Savyasachin", "Kiritin", "Phalguna", "Jishnu"],
+      "role": "Third of the Pandavas, the greatest archer of his age",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "The third son of Kunti, born of the god Indra, Arjuna is Drona’s favourite pupil and the finest archer of his generation. He wins Draupadi at her svayamvara by stringing a bow no other suitor could, helps Krishna burn the Khandava forest, and in the years of exile wins divine weapons — even facing Shiva himself, disguised as a hunter.\n\nFor all his skill, the moment the epic remembers best is the one where he cannot act. Facing his grandfather, his teacher and his cousins across the field of Kurukshetra, he lays down his bow. The conversation that follows is the Bhagavad Gita.",
+      "dilemma": {
+        "title": "Duty against kinship",
+        "body": "Arjuna’s question in the first chapter of the Gita is simple and terrible: how can it be right to win a kingdom by killing the people who raised and taught him? Such a war, he argues, will destroy families and the order they protect; better to be killed unarmed.\n\nKrishna does not deny the grief. He reframes the act — the self cannot be slain, a warrior’s duty is to fight a just war, and action done without craving for its fruits does not bind. Whether that answer satisfies is left to the reader. Arjuna, at the end, says his doubts are gone."
+      },
+      "relations": [
+        { "id": "krishna", "label": "Friend, cousin and charioteer" },
+        { "id": "draupadi", "label": "Won her at her svayamvara" },
+        { "id": "yudhishthira", "label": "Eldest brother" },
+        { "id": "karna", "label": "Rival — and, unknown to him, his eldest brother" },
+        { "id": "drona", "label": "Teacher" },
+        { "id": "abhimanyu", "label": "Son, by Krishna’s sister Subhadra" },
+        { "id": "bhishma", "label": "Grandsire he must face in battle" }
+      ],
+      "read": [
+        { "verseId": "gita_1_28", "label": "His despair on the battlefield" },
+        { "verseId": "mbh_1_179_1", "label": "Strings the bow at Draupadi’s svayamvara" }
+      ]
+    },
+    {
+      "id": "nakula",
+      "name": "Nakula",
+      "sanskrit": "नकुल",
+      "aka": [],
+      "role": "Fourth of the Pandavas, the handsome horseman",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "Nakula and his twin Sahadeva are the sons of Madri, Pandu’s second wife, born of the twin Ashvin gods. Nakula is known for his beauty and his skill with horses and the sword. After Madri’s death, Kunti raises the twins as her own.\n\nHe matters most in a quiet moment in the forest: when the Yaksha at the lake lets Yudhishthira bring back one dead brother, Yudhishthira chooses Nakula, so that each of Pandu’s wives will still have a living son.",
+      "relations": [
+        { "id": "sahadeva", "label": "Twin brother" },
+        { "id": "yudhishthira", "label": "Half-brother who chooses to save him" },
+        { "id": "kunti", "label": "Stepmother who raised him" }
+      ]
+    },
+    {
+      "id": "sahadeva",
+      "name": "Sahadeva",
+      "sanskrit": "सहदेव",
+      "aka": [],
+      "role": "Youngest of the Pandavas, quiet and learned",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "Nakula’s twin and the youngest of the five, Sahadeva is quiet and learned, known for his wisdom in statecraft. At Yudhishthira’s royal consecration it is Sahadeva who, on Bhishma’s advice, presents the first honour to Krishna — and who dares any king who objects to say so. Shishupala does, and dies for it.",
+      "relations": [
+        { "id": "nakula", "label": "Twin brother" },
+        { "id": "yudhishthira", "label": "Eldest brother" },
+        { "id": "krishna", "label": "Gave him the first honour" }
+      ]
+    },
+    {
+      "id": "draupadi",
+      "name": "Draupadi",
+      "sanskrit": "द्रौपदी",
+      "aka": ["Panchali", "Krishnaa", "Yajnaseni"],
+      "role": "Princess of Panchala, wife of the five Pandavas",
+      "books": ["mahabharata"],
+      "group": "mbh-pandavas",
+      "summary": "Draupadi is born from a sacrificial fire kindled by her father, King Drupada — Yajnaseni means ‘born of the sacrifice’. Arjuna wins her at her svayamvara, and through Kunti’s chance words she becomes the wife of all five brothers.\n\nShe is the epic’s sharpest voice. Dragged into the dice hall as a ‘slave’, she does not plead; she asks a legal question that the assembled elders cannot answer. In exile she challenges Yudhishthira’s patience and asks why the good suffer. Her humiliation is the wound the whole war is fought to avenge.",
+      "dilemma": {
+        "title": "Whose property was she?",
+        "body": "Told she has been lost at dice, Draupadi asks whether Yudhishthira staked her before or after he had lost himself. If he was already a slave, could he still own — and wager — a wife?\n\nBhishma answers that dharma is subtle and he cannot decide. Only the young Kaurava Vikarna says the bet was invalid, and he is shouted down. Her question exposes the hall: men bound by rules of property and honour stand silent while a woman is wronged in front of them."
+      },
+      "relations": [
+        { "id": "arjuna", "label": "Won her hand" },
+        { "id": "yudhishthira", "label": "Husband who staked her" },
+        { "id": "bhima", "label": "Husband who swears vengeance" },
+        { "id": "krishna", "label": "Friend" },
+        { "id": "kunti", "label": "Mother-in-law" },
+        { "id": "dushasana", "label": "Dragged her into the hall" },
+        { "id": "karna", "label": "Insulted her in the dice hall" }
+      ],
+      "read": [
+        { "verseId": "mbh_2_60_7", "label": "Her question in the dice hall" },
+        { "verseId": "mbh_3_28_20", "label": "Challenges Yudhishthira in the forest" }
+      ]
+    },
+    {
+      "id": "abhimanyu",
+      "name": "Abhimanyu",
+      "sanskrit": "अभिमन्यु",
+      "aka": ["Saubhadra"],
+      "role": "Arjuna’s young son, who broke into the wheel formation",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-pandavas",
+      "summary": "The son of Arjuna and Krishna’s sister Subhadra, Abhimanyu is a brilliant young warrior. On the thirteenth day of the war, with Arjuna lured away, Drona arranges the army in the chakravyuha, the wheel formation. Abhimanyu knows how to break in but not how to get out.\n\nThe Pandavas following him are held at the breach by Jayadratha, and Abhimanyu, surrounded, is attacked by several great warriors at once and killed — a breach of the rules of fair combat that drives Arjuna to fury.",
+      "relations": [
+        { "id": "arjuna", "label": "Father" },
+        { "id": "krishna", "label": "Uncle" },
+        { "id": "drona", "label": "Commander who set the trap" }
+      ]
+    },
+    {
+      "id": "duryodhana",
+      "name": "Duryodhana",
+      "sanskrit": "दुर्योधन",
+      "aka": ["Suyodhana"],
+      "role": "Eldest Kaurava prince, the Pandavas’ great rival",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-kauravas",
+      "summary": "The eldest of Dhritarashtra and Gandhari’s hundred sons, Duryodhana grows up convinced that the throne of Hastinapura is his by right — his father is the elder brother, blind or not — and that his cousins are usurpers. Jealousy of Bhima and Arjuna turns into plots: poison, the house of lac, the rigged game of dice. He refuses Krishna’s last offer of peace, declaring he will not give up even as much land as the point of a needle can pierce.\n\nHe is also generous to his friends, brave in battle and, in his own eyes, wronged. He dies believing he has lived as a king should.",
+      "dilemma": {
+        "title": "Whose throne?",
+        "body": "Duryodhana’s claim is not empty. Dhritarashtra was the elder son, passed over only because he was blind; Pandu ruled in his place and then left for the forest; the Pandavas, by their mother’s own account, were born of gods rather than of Pandu. Duryodhana asks why the son of the elder line should yield.\n\nThe epic answers through character rather than law: whatever his claim, he pursues it through poison, fire and fraud, and refuses every peaceful settlement. It is his means, not only his ends, that condemn him."
+      },
+      "relations": [
+        { "id": "karna", "label": "Closest friend" },
+        { "id": "shakuni", "label": "Uncle and schemer" },
+        { "id": "dushasana", "label": "Brother and accomplice" },
+        { "id": "dhritarashtra", "label": "Father" },
+        { "id": "gandhari", "label": "Mother" },
+        { "id": "bhima", "label": "Rival since boyhood" },
+        { "id": "yudhishthira", "label": "Cousin and rival heir" },
+        { "id": "krishna", "label": "Refused his offer of peace" }
+      ],
+      "read": [
+        { "verseId": "mbh_4_125_25", "label": "Refuses even a needle-point of land" }
+      ]
+    },
+    {
+      "id": "karna",
+      "name": "Karna",
+      "sanskrit": "कर्ण",
+      "aka": ["Vasusena", "Radheya", "Vaikartana", "King of Anga"],
+      "role": "Kunti’s firstborn, raised by a charioteer, Duryodhana’s truest friend",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-kauravas",
+      "summary": "Karna is born to the unmarried Kunti and the sun god, with natural armour and earrings, and is set adrift as a newborn. The charioteer Adhiratha and his wife Radha find and raise him, so the world knows him as a suta’s son.\n\nAt the royal tournament he matches Arjuna feat for feat and is publicly mocked for his birth; Duryodhana alone stands up for him and crowns him king of Anga on the spot. From that day his loyalty is fixed. He is famous for never refusing a gift — even when Indra, disguised as a brahmin, asks for the armour that makes him invincible — and for the courage with which he goes to a war he expects to lose.",
+      "dilemma": {
+        "title": "Loyalty against blood",
+        "body": "On the eve of war Karna learns, from Krishna and then from Kunti, that he is the eldest Pandava. If he crosses over, he will be king, with the five brothers at his side. He refuses. Duryodhana gave him honour when no one else would, and he will not abandon a friend at the hour of need; nor will he forget that his mother threw him away.\n\nMany readers see him as the epic’s most tragic figure — a man bound to the wrong side by gratitude. Others point out that he joined in Draupadi’s humiliation and egged on Duryodhana’s worst schemes."
+      },
+      "relations": [
+        { "id": "duryodhana", "label": "Friend who made him a king" },
+        { "id": "kunti", "label": "Birth mother" },
+        { "id": "arjuna", "label": "Rival — and his younger brother" },
+        { "id": "krishna", "label": "Revealed his birth and offered him the throne" },
+        { "id": "draupadi", "label": "Insulted her in the dice hall" },
+        { "id": "bhishma", "label": "Refused to fight while Bhishma led the army" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_126_1", "label": "Enters the tournament arena" },
+        { "verseId": "mbh_3_294_1", "label": "Gives away his armour" },
+        { "verseId": "mbh_4_138_11", "label": "Krishna tells him who he is" }
+      ]
+    },
+    {
+      "id": "dushasana",
+      "name": "Dushasana",
+      "sanskrit": "दुःशासन",
+      "aka": [],
+      "role": "Second Kaurava prince, who dragged Draupadi into the dice hall",
+      "books": ["mahabharata"],
+      "group": "mbh-kauravas",
+      "summary": "The second of Dhritarashtra’s hundred sons and Duryodhana’s most loyal enforcer. When Draupadi refuses to come to the dice hall, Dushasana drags her there by the hair, and then tries to strip off her garment in front of the assembly. The cloth keeps reappearing until he gives up, exhausted.\n\nBhima swears to tear open his chest and drink his blood — a vow he fulfils on the battlefield.",
+      "relations": [
+        { "id": "duryodhana", "label": "Elder brother" },
+        { "id": "draupadi", "label": "Assaulted her in the dice hall" },
+        { "id": "bhima", "label": "Swore to kill him" }
+      ],
+      "read": [
+        { "verseId": "mbh_2_61_40", "label": "Pulls at Draupadi’s garment" }
+      ]
+    },
+    {
+      "id": "shakuni",
+      "name": "Shakuni",
+      "sanskrit": "शकुनि",
+      "aka": ["Saubala"],
+      "role": "Prince of Gandhara, Duryodhana’s uncle and master of dice",
+      "books": ["mahabharata"],
+      "group": "mbh-kauravas",
+      "summary": "Gandhari’s brother, a son of King Subala of Gandhara, Shakuni lives at Hastinapura as his nephew Duryodhana’s chief adviser. It is he who proposes taking the Pandavas’ kingdom without a war: invite Yudhishthira to a game of dice, at which Shakuni has no equal, and let him lose everything. He plays for Duryodhana in both games and wins both.\n\nLater retellings give him a secret motive — revenge on the Kurus — but in the critical edition he is simply Duryodhana’s loyal and cunning ally.",
+      "relations": [
+        { "id": "duryodhana", "label": "Nephew" },
+        { "id": "gandhari", "label": "Sister" },
+        { "id": "yudhishthira", "label": "Beat him at dice" }
+      ],
+      "read": [
+        { "verseId": "mbh_2_44_18", "label": "Proposes the game of dice" }
+      ]
+    },
+    {
+      "id": "vikarna",
+      "name": "Vikarna",
+      "sanskrit": "विकर्ण",
+      "aka": [],
+      "role": "The Kaurava prince who spoke up for Draupadi",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-kauravas",
+      "summary": "One of Dhritarashtra’s hundred sons, Vikarna is remembered for a single moment. When Draupadi asks the dice hall whether she was lawfully lost, and the elders sit silent, it is this young Kaurava who answers: the wager was invalid, made by a man who had already lost himself, staking a wife shared by five. Karna shouts him down as a boy who doesn’t understand.\n\nVikarna still fights for his brothers in the war, and dies there.",
+      "relations": [
+        { "id": "duryodhana", "label": "Eldest brother" },
+        { "id": "draupadi", "label": "Spoke in her defence" },
+        { "id": "karna", "label": "Silenced him in the hall" }
+      ],
+      "read": [
+        { "verseId": "mbh_2_61_11", "label": "Speaks up in the dice hall" }
+      ]
+    },
+    {
+      "id": "ashvatthama",
+      "name": "Ashvatthama",
+      "sanskrit": "अश्वत्थामा",
+      "aka": ["Drauni"],
+      "role": "Drona’s son, and the last commander of the Kaurava army",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-kauravas",
+      "summary": "The only son of the teacher Drona, Ashvatthama fights for the Kauravas throughout the war. The false report of his death is what breaks his father.\n\nWhen the war is all but lost, he takes revenge in the most terrible way: entering the Pandava camp at night with Kripa and Kritavarma, he kills the sleeping warriors — Dhrishtadyumna, Shikhandi and Draupadi’s five sons among them. For this, Krishna curses him to wander the earth in pain for three thousand years.",
+      "relations": [
+        { "id": "drona", "label": "Father" },
+        { "id": "duryodhana", "label": "Friend and commander" },
+        { "id": "draupadi", "label": "Killed her sons" },
+        { "id": "krishna", "label": "Cursed him" }
+      ]
+    },
+    {
+      "id": "bhishma",
+      "name": "Bhishma",
+      "sanskrit": "भीष्म",
+      "aka": ["Devavrata", "Gangeya", "Grandsire"],
+      "role": "Grandsire of the Kurus, bound by a lifelong vow",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-elders",
+      "summary": "Born Devavrata, the son of King Shantanu and the river goddess Ganga, he is heir to the Kuru throne until his father falls in love with Satyavati, a fisherman’s daughter, whose father demands that her son inherit. Devavrata gives up the throne — and, so that no son of his could ever contest it, vows never to marry. Flowers fall from the sky and he is named Bhishma, ‘the one of the terrible vow’. His father grants him the power to choose the hour of his death.\n\nHe spends the rest of his long life serving the throne he renounced: raising Dhritarashtra and Pandu, teaching their sons, and finally commanding the Kaurava army against the grandsons he loves.",
+      "dilemma": {
+        "title": "A vow that outlives its reason",
+        "body": "Bhishma’s vow was made to secure his father’s happiness. It ends by binding him to Duryodhana’s side: he sits in the dice hall while Draupadi is dragged in, says that dharma is too subtle for him to judge, and fights the Pandavas for nine days.\n\nIs keeping one’s word a higher duty than resisting injustice? Bhishma seems to think so, and the epic both honours him for it and shows its cost. In the end he tells the Pandavas himself how he can be brought down."
+      },
+      "relations": [
+        { "id": "satyavati", "label": "Stepmother, for whose sake he took his vow" },
+        { "id": "shikhandi", "label": "Born to bring about his death" },
+        { "id": "dhritarashtra", "label": "Raised him" },
+        { "id": "pandu", "label": "Raised him" },
+        { "id": "arjuna", "label": "Grandson who brings him down" },
+        { "id": "yudhishthira", "label": "Grandson he teaches from his deathbed" },
+        { "id": "duryodhana", "label": "Grandson he fights for" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_94_78", "label": "Takes his vow" },
+        { "verseId": "mbh_6_56_10", "label": "Begins teaching Yudhishthira" }
+      ]
+    },
+    {
+      "id": "satyavati",
+      "name": "Satyavati",
+      "sanskrit": "सत्यवती",
+      "aka": [],
+      "role": "Fisherman’s daughter who became queen of the Kurus",
+      "books": ["mahabharata"],
+      "group": "mbh-elders",
+      "summary": "Raised by a fisherman chief, Satyavati has a son before her marriage — the sage Vyasa, by the wandering seer Parashara. King Shantanu later falls in love with her, and her father’s condition — that her son, not Shantanu’s heir Devavrata, should inherit — produces Bhishma’s vow.\n\nWhen her own sons by Shantanu die young and childless, she first begs Bhishma to break his vow, and when he refuses, calls on Vyasa to father heirs with their widows. Dhritarashtra, Pandu and Vidura are born of that decision.",
+      "relations": [
+        { "id": "bhishma", "label": "Stepson who renounced the throne for her" },
+        { "id": "vyasa", "label": "Her son, born before her marriage" }
+      ]
+    },
+    {
+      "id": "dhritarashtra",
+      "name": "Dhritarashtra",
+      "sanskrit": "धृतराष्ट्र",
+      "aka": [],
+      "role": "The blind king of Hastinapura, father of the Kauravas",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-elders",
+      "summary": "Born blind, Dhritarashtra is the elder of the princes fathered by Vyasa to continue the Kuru line, and is passed over for the throne in favour of his younger brother Pandu. He becomes king only when Pandu withdraws to the forest. He loves his son Duryodhana beyond reason. Again and again he sees what is right — Vidura and Bhishma tell him plainly — and again and again he gives way to his son.\n\nThe Bhagavad Gita opens with his question to Sanjaya: what did my sons and the sons of Pandu do?",
+      "dilemma": {
+        "title": "A father’s love against a king’s duty",
+        "body": "Dhritarashtra’s failing is not cruelty but weakness. As king he should stop the dice game, restrain his son, and give the Pandavas their share; as a father he cannot bring himself to deny Duryodhana anything. When Draupadi is humiliated, he intervenes only when ill omens frighten him.\n\nThe epic treats his blindness as more than physical: he sees the coming ruin clearly, says so, and does nothing."
+      },
+      "relations": [
+        { "id": "gandhari", "label": "Wife" },
+        { "id": "duryodhana", "label": "Son" },
+        { "id": "pandu", "label": "Younger brother" },
+        { "id": "vidura", "label": "Half-brother and counsellor" },
+        { "id": "sanjaya", "label": "Narrates the war to him" },
+        { "id": "vyasa", "label": "Father" }
+      ],
+      "read": [
+        { "verseId": "gita_1_1", "label": "Opens the Gita with his question" },
+        { "verseId": "mbh_2_63_27", "label": "Grants Draupadi her boons" }
+      ]
+    },
+    {
+      "id": "gandhari",
+      "name": "Gandhari",
+      "sanskrit": "गान्धारी",
+      "aka": [],
+      "role": "Queen of Hastinapura, mother of the hundred Kauravas",
+      "books": ["mahabharata"],
+      "group": "mbh-elders",
+      "summary": "A princess of Gandhara married to the blind Dhritarashtra, Gandhari covers her own eyes with a cloth for the rest of her life, refusing a sight her husband cannot share. She is the mother of Duryodhana and his ninety-nine brothers, and urges her son more than once to make peace.\n\nWhen Duryodhana asks her blessing during the war, she will only say that where there is dharma, there is victory. After the war, grieving her sons, she curses Krishna for allowing the slaughter: his own clan, she says, will destroy itself.",
+      "relations": [
+        { "id": "dhritarashtra", "label": "Husband" },
+        { "id": "duryodhana", "label": "Son" },
+        { "id": "shakuni", "label": "Brother" },
+        { "id": "krishna", "label": "Cursed him after the war" }
+      ]
+    },
+    {
+      "id": "pandu",
+      "name": "Pandu",
+      "sanskrit": "पाण्डु",
+      "aka": [],
+      "role": "King of Hastinapura, father of the Pandavas",
+      "books": ["mahabharata"],
+      "group": "mbh-elders",
+      "summary": "Dhritarashtra’s younger brother, also fathered by Vyasa, Pandu becomes king because his elder brother is blind. Out hunting, he shoots a deer as it is mating — really a sage in animal form — who curses him to die the moment he lies with a woman.\n\nPandu gives up the throne for the forest, and his wives Kunti and Madri bear sons by the gods. Years later, overcome by desire for Madri, he embraces her, and the curse takes him.",
+      "relations": [
+        { "id": "kunti", "label": "Wife" },
+        { "id": "dhritarashtra", "label": "Elder brother" },
+        { "id": "vidura", "label": "Half-brother" },
+        { "id": "yudhishthira", "label": "Son" },
+        { "id": "arjuna", "label": "Son" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_109_5", "label": "The deer in the forest" }
+      ]
+    },
+    {
+      "id": "kunti",
+      "name": "Kunti",
+      "sanskrit": "कुन्ती",
+      "aka": ["Pritha"],
+      "role": "Mother of the Pandavas — and of Karna",
+      "books": ["mahabharata"],
+      "group": "mbh-elders",
+      "summary": "Born Pritha and raised by King Kuntibhoja, Kunti receives from the sage Durvasa a mantra that can summon any god to give her a child. Curious, she tries it while still unmarried; the sun god comes, and she bears Karna, whom she sets adrift on a river for fear of disgrace. Married to Pandu, who is cursed never to touch his wives, she uses the mantra again to bear Yudhishthira, Bhima and Arjuna, and shares it with Madri, mother of the twins.\n\nShe follows her sons through every hardship. Only on the eve of war does she go to Karna and tell him who he is.",
+      "dilemma": {
+        "title": "A secret kept too long",
+        "body": "Kunti abandons her first son to protect her name, and keeps the secret for decades while he grows up as a charioteer’s son, is mocked as low-born, and becomes her other sons’ bitterest enemy. When she finally speaks, it is to ask him to change sides.\n\nKarna refuses, but promises to spare all her sons except Arjuna, so that she will still have five. Her silence protected her, and her family paid for it — after the war, Yudhishthira is shattered to learn that the man they killed was their eldest brother."
+      },
+      "relations": [
+        { "id": "karna", "label": "First son, abandoned at birth" },
+        { "id": "yudhishthira", "label": "Son" },
+        { "id": "bhima", "label": "Son" },
+        { "id": "arjuna", "label": "Son" },
+        { "id": "nakula", "label": "Stepson she raised" },
+        { "id": "pandu", "label": "Husband" },
+        { "id": "krishna", "label": "Her brother’s son" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_104_8", "label": "The birth of Karna" },
+        { "verseId": "mbh_4_142_27", "label": "Goes to Karna on the eve of war" }
+      ]
+    },
+    {
+      "id": "vidura",
+      "name": "Vidura",
+      "sanskrit": "विदुर",
+      "aka": ["Kshattri"],
+      "role": "Half-brother of the kings, and the court’s conscience",
+      "books": ["mahabharata"],
+      "group": "mbh-elders",
+      "summary": "Vidura is the third son fathered by Vyasa, born to a maidservant, which bars him from the throne. He becomes the court’s wisest counsellor and the Pandavas’ quiet protector — it is Vidura who warns Yudhishthira, in a coded message, about the house of lac.\n\nHe speaks against the dice game, against the insult to Draupadi and against the war, and is ignored each time. The epic says he was the god Dharma himself, born as a man under a sage’s curse.",
+      "relations": [
+        { "id": "dhritarashtra", "label": "Half-brother he advises" },
+        { "id": "pandu", "label": "Half-brother" },
+        { "id": "yudhishthira", "label": "Nephew he protects" },
+        { "id": "vyasa", "label": "Father" }
+      ]
+    },
+    {
+      "id": "drona",
+      "name": "Drona",
+      "sanskrit": "द्रोण",
+      "aka": ["Dronacharya", "Bharadvaja"],
+      "role": "Teacher of arms to the Kuru princes",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-elders",
+      "summary": "A brahmin who chose the life of a warrior, Drona comes to Hastinapura poor and humiliated by his old friend King Drupada, and becomes teacher to the Kaurava and Pandava princes. Arjuna is his favourite. His fee for teaching them is revenge: when their training ends, he sends them to capture Drupada.\n\nHe fights for the Kauravas in the war and commands their army after Bhishma falls. He is undone by grief: told that Ashvatthama is dead — truly an elephant of that name — he lays down his weapons and is killed.",
+      "dilemma": {
+        "title": "The teacher’s favour",
+        "body": "Drona’s promise to make Arjuna the greatest archer in the world leads to one of the epic’s harshest scenes. When the Nishada prince Ekalavya, refused as a pupil, teaches himself before a clay image of Drona and surpasses Arjuna, Drona asks for his teacher’s fee — Ekalavya’s right thumb — and gets it.\n\nThe text presents the act plainly. Readers have long seen in it a teacher keeping a promise to one student by destroying another, in a world where skill alone did not decide who could rise."
+      },
+      "relations": [
+        { "id": "arjuna", "label": "Favourite pupil" },
+        { "id": "ashvatthama", "label": "Son" },
+        { "id": "ekalavya", "label": "The pupil he refused, then maimed" },
+        { "id": "yudhishthira", "label": "Pupil whose half-truth broke him" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_123_10", "label": "Ekalavya comes to him" }
+      ]
+    },
+    {
+      "id": "shikhandi",
+      "name": "Shikhandi",
+      "sanskrit": "शिखण्डी",
+      "aka": ["Amba, in a former life"],
+      "role": "Warrior born to avenge Amba, the key to Bhishma’s fall",
+      "books": ["mahabharata", "gita"],
+      "group": "mbh-others",
+      "summary": "Amba, a princess of Kashi, was carried off by Bhishma as a bride for his half-brother, then let go because she loved King Shalva — but Shalva would no longer have her, and Bhishma, bound by his vow, would not marry her. Shamed and with nowhere to go, she devoted herself to austerities to bring about Bhishma’s death, and was reborn as a daughter of King Drupada who was raised as a son and later became a man: Shikhandi.\n\nBhishma knows who Shikhandi was and will not strike one born a woman. On the tenth day of the war Arjuna advances behind Shikhandi, and Bhishma lowers his bow.",
+      "relations": [
+        { "id": "bhishma", "label": "The man she was reborn to destroy" },
+        { "id": "arjuna", "label": "Fought behind him" },
+        { "id": "draupadi", "label": "Sister" }
+      ],
+      "read": [
+        { "verseId": "mbh_4_170_9", "label": "Bhishma tells Amba’s story" }
+      ]
+    },
+    {
+      "id": "ekalavya",
+      "name": "Ekalavya",
+      "sanskrit": "एकलव्य",
+      "aka": [],
+      "role": "Nishada prince who taught himself archery",
+      "books": ["mahabharata"],
+      "group": "mbh-others",
+      "summary": "The son of Hiranyadhanu, king of the Nishadas, a forest people, Ekalavya asks Drona to teach him and is turned away. He returns to the forest, makes a clay image of Drona, and practises before it until his skill outstrips even Arjuna’s.\n\nWhen Drona learns of it, he asks for his fee as a teacher: Ekalavya’s right thumb. Ekalavya cuts it off and gives it without hesitation, and never shoots as swiftly again.",
+      "relations": [
+        { "id": "drona", "label": "Teacher who refused him, then claimed his fee" },
+        { "id": "arjuna", "label": "The rival he might have been" }
+      ],
+      "read": [
+        { "verseId": "mbh_1_123_10", "label": "Comes to Drona" }
+      ]
+    },
+    {
+      "id": "shishupala",
+      "name": "Shishupala",
+      "sanskrit": "शिशुपाल",
+      "aka": [],
+      "role": "King of Chedi, killed by Krishna at the royal consecration",
+      "books": ["mahabharata"],
+      "group": "mbh-others",
+      "summary": "Shishupala, king of Chedi, is Krishna’s cousin and his bitter enemy. At Yudhishthira’s royal consecration, when the first honour is given to Krishna, he rises in fury, insults Krishna, Bhishma and the Pandavas, and challenges them all.\n\nKrishna had promised Shishupala’s mother to pardon a hundred of his offences. When the insults pass that limit, Krishna kills him with his discus.",
+      "relations": [
+        { "id": "krishna", "label": "Cousin and enemy" },
+        { "id": "bhishma", "label": "Insulted him" },
+        { "id": "yudhishthira", "label": "Host of the sacrifice" }
+      ],
+      "read": [
+        { "verseId": "mbh_2_33_31", "label": "Objects to Krishna’s honour" }
+      ]
+    },
+    {
+      "id": "rama",
+      "name": "Rama",
+      "sanskrit": "राम",
+      "aka": ["Raghava", "Dasharathi", "Kakutstha", "Ramachandra"],
+      "role": "Prince of Ayodhya, the hero of the Ramayana",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "The eldest son of King Dasharatha of Ayodhya and Queen Kausalya, Rama is the Ramayana’s ideal prince: truthful, self-controlled, devoted to his father’s word. On the eve of his coronation he is exiled for fourteen years because of a promise his father once made to Queen Kaikeyi, and he goes without protest, with his wife Sita and his brother Lakshmana.\n\nIn the forest Sita is carried off by Ravana, king of Lanka. Rama allies with the monkey king Sugriva, crosses the ocean on a bridge built by the monkey army, kills Ravana, and returns to rule Ayodhya — a reign remembered as Rama-rajya, the just kingdom.",
+      "dilemma": {
+        "title": "The king and the husband",
+        "body": "Twice Rama puts his duty as a king above Sita. After the war he refuses to take her back until she has proved her purity by walking into fire; years later, hearing his subjects gossip about her time in Ravana’s house, he sends her, pregnant, into the forest. Valmiki shows his anguish both times, and others in the story protest.\n\nReaders have argued ever since over whether this is the highest ideal of a ruler who belongs to his people, or a failure of the trust a husband owes his wife. Many also note that the second episode comes from the Uttara Kanda, which scholars widely regard as a later addition to the poem."
+      },
+      "relations": [
+        { "id": "sita", "label": "Wife" },
+        { "id": "lakshmana", "label": "Brother and companion in exile" },
+        { "id": "bharata", "label": "Brother who ruled in his name" },
+        { "id": "dasharatha", "label": "Father" },
+        { "id": "kausalya", "label": "Mother" },
+        { "id": "hanuman", "label": "Devoted ally" },
+        { "id": "sugriva", "label": "Ally" },
+        { "id": "ravana", "label": "Enemy" },
+        { "id": "vali", "label": "Killed him from hiding" },
+        { "id": "lava-kusha", "label": "Sons" }
+      ],
+      "read": [
+        { "verseId": "ramayana_2_16_1", "label": "Learns of his exile" },
+        { "verseId": "ramayana_6_97_3", "label": "Faces Ravana for the last time" }
+      ]
+    },
+    {
+      "id": "sita",
+      "name": "Sita",
+      "sanskrit": "सीता",
+      "aka": ["Janaki", "Vaidehi", "Maithili"],
+      "role": "Princess of Videha, Rama’s wife",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Sita is found by King Janaka of Videha in a furrow of a field he is ploughing, and raised as his daughter. Rama wins her by breaking the great bow of Shiva. When he is exiled, she insists on going with him, refusing to stay behind in comfort.\n\nCarried off by Ravana to Lanka, she spends months in the Ashoka grove, guarded by rakshasis, refusing every threat and every offer. After her rescue she must prove her purity by fire; later, though innocent, she is sent away from Ayodhya because of public gossip. She raises her twin sons in Valmiki’s hermitage, and at the end, called once more to swear her innocence before the court, she asks the Earth, her mother, to take her back.",
+      "dilemma": {
+        "title": "Proof that is never enough",
+        "body": "Sita’s story asks what one person owes to a community’s suspicion. She passes the ordeal by fire; the gods themselves declare her pure. It does not end the doubt.\n\nWhen Rama asks for a second public oath years later, she makes it — and leaves. Some read her final act as despair, others as the only reply left to her: a refusal to keep proving what should never have been questioned."
+      },
+      "relations": [
+        { "id": "rama", "label": "Husband" },
+        { "id": "lakshmana", "label": "Brother-in-law who guarded her" },
+        { "id": "ravana", "label": "Her abductor" },
+        { "id": "hanuman", "label": "Found her in Lanka" },
+        { "id": "jatayu", "label": "Died trying to save her" },
+        { "id": "valmiki", "label": "Sheltered her in exile" },
+        { "id": "lava-kusha", "label": "Sons" }
+      ],
+      "read": [
+        { "verseId": "ramayana_5_32_2", "label": "Hanuman speaks to her in the Ashoka grove" },
+        { "verseId": "ramayana_7_88_11", "label": "Returns to the Earth" }
+      ]
+    },
+    {
+      "id": "lakshmana",
+      "name": "Lakshmana",
+      "sanskrit": "लक्ष्मण",
+      "aka": ["Saumitri"],
+      "role": "Rama’s younger brother and constant companion",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Lakshmana, son of Queen Sumitra, attaches himself to Rama from childhood and follows him into exile without being asked. He guards Rama and Sita in the forest, and it is he who cuts off Shurpanakha’s nose and ears. When Sita, frightened by a cry for help in Rama’s voice, accuses him of wanting her for himself, he leaves her to look for Rama — the opening Ravana needs. (The protective line he draws around the hut, famous from later retellings, is not in Valmiki.)\n\nIn the war he kills Indrajit. At the very end he breaks Rama’s order not to interrupt a private meeting, to save Ayodhya from a sage’s curse, and is banished for it.",
+      "dilemma": {
+        "title": "Obey, or protect?",
+        "body": "Ordered to guard Sita, Lakshmana is sure the cry is a trick and refuses to leave. Sita, frantic, accuses him of treachery and of desiring her. Stung, he goes.\n\nWas he right to hold to Rama’s order, or to yield to Sita’s fear? Either choice put her at risk. The episode shows how a carefully laid deception turns even loyalty against itself."
+      },
+      "relations": [
+        { "id": "rama", "label": "Elder brother he follows everywhere" },
+        { "id": "sita", "label": "Sister-in-law he guards" },
+        { "id": "shatrughna", "label": "Twin brother" },
+        { "id": "shurpanakha", "label": "Disfigured her" },
+        { "id": "indrajit", "label": "Killed him in battle" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_43_6", "label": "Sita’s accusation" }
+      ]
+    },
+    {
+      "id": "bharata",
+      "name": "Bharata",
+      "sanskrit": "भरत",
+      "aka": [],
+      "role": "Rama’s brother, who ruled in his name",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "The son of Queen Kaikeyi, Bharata is away at his grandfather’s court when his mother wins him the throne by having Rama exiled. He returns to find his father dead and his brother gone, denounces Kaikeyi, and refuses the crown.\n\nHe goes into the forest to beg Rama to come home; when Rama will not undo their father’s word, Bharata takes his sandals instead. For fourteen years he rules from the village of Nandigrama, living as an ascetic, with Rama’s sandals on the throne.",
+      "relations": [
+        { "id": "rama", "label": "Elder brother" },
+        { "id": "kaikeyi", "label": "Mother, whom he denounces" },
+        { "id": "dasharatha", "label": "Father" },
+        { "id": "shatrughna", "label": "Constant companion" }
+      ],
+      "read": [
+        { "verseId": "ramayana_2_93_29", "label": "Finds Rama in the forest" },
+        { "verseId": "ramayana_2_104_21", "label": "Asks for Rama’s sandals" }
+      ]
+    },
+    {
+      "id": "shatrughna",
+      "name": "Shatrughna",
+      "sanskrit": "शत्रुघ्न",
+      "aka": [],
+      "role": "Youngest of the four brothers, Bharata’s companion",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Lakshmana’s twin and the youngest of Dasharatha’s four sons, Shatrughna is devoted to Bharata as Lakshmana is to Rama. Meeting the scheming maid Manthara after Rama’s exile, he drags her across the floor in rage, and only Bharata’s intervention saves her. Later he kills the demon Lavana and founds the city of Madhura, the Mathura of later times.",
+      "relations": [
+        { "id": "bharata", "label": "Brother he follows" },
+        { "id": "lakshmana", "label": "Twin brother" },
+        { "id": "manthara", "label": "Attacked her" }
+      ]
+    },
+    {
+      "id": "dasharatha",
+      "name": "Dasharatha",
+      "sanskrit": "दशरथ",
+      "aka": [],
+      "role": "King of Ayodhya, father of Rama",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "The aged king of Ayodhya, childless for years until a great sacrifice brings him four sons by three queens. He resolves to make Rama his heir, but his youngest queen, Kaikeyi, reminds him of two boons he promised her long ago when she saved his life in battle — and asks for Bharata’s coronation and Rama’s exile.\n\nBound by his word, he cannot refuse. He dies of grief days after Rama leaves, remembering a young ascetic he killed by accident in his youth, whose blind father cursed him to die mourning a son.",
+      "dilemma": {
+        "title": "A promise against justice",
+        "body": "Dasharatha knows that exiling Rama is unjust, and says so — he begs Kaikeyi, calls her cruel, collapses. But he gave his word, and in the Ramayana’s world a king’s promise is the foundation of everything: if the king can break his word, no oath in the land is safe.\n\nHe keeps it, and it kills him. Rama, too, insists on honouring it. The story asks whether a promise extracted unfairly still binds, and answers, painfully, that it does."
+      },
+      "relations": [
+        { "id": "rama", "label": "Son" },
+        { "id": "kaikeyi", "label": "Queen who claimed her boons" },
+        { "id": "kausalya", "label": "Chief queen" },
+        { "id": "bharata", "label": "Son" }
+      ],
+      "read": [
+        { "verseId": "ramayana_2_57_14", "label": "Remembers the ascetic boy he killed" }
+      ]
+    },
+    {
+      "id": "kausalya",
+      "name": "Kausalya",
+      "sanskrit": "कौसल्या",
+      "aka": [],
+      "role": "Chief queen of Ayodhya, Rama’s mother",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Dasharatha’s senior queen and Rama’s mother. She begs Rama not to go, then blesses him when she sees he will not break his father’s word, and spends the exile in grief. Her bitter words to Dasharatha after Rama leaves, and her reconciliation with him in his last days, are among the Ayodhya Kanda’s most human scenes. When Bharata returns, she suspects him at first, and then embraces him when she sees his grief is real.",
+      "relations": [
+        { "id": "rama", "label": "Son" },
+        { "id": "dasharatha", "label": "Husband" },
+        { "id": "bharata", "label": "Suspects, then embraces him" }
+      ]
+    },
+    {
+      "id": "kaikeyi",
+      "name": "Kaikeyi",
+      "sanskrit": "कैकेयी",
+      "aka": [],
+      "role": "Dasharatha’s youngest queen, who had Rama exiled",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "A princess of Kekaya and Bharata’s mother, Kaikeyi at first rejoices at Rama’s coming coronation — she says she makes no difference between Rama and Bharata. Her maid Manthara works on her fears through the night: once Rama is king, Bharata and she will be nothing. By morning she is demanding the two boons Dasharatha owes her: Bharata crowned, Rama banished for fourteen years.\n\nShe gets both, and is shunned for it — most bitterly by Bharata himself.",
+      "dilemma": {
+        "title": "A mother’s fear",
+        "body": "Kaikeyi is easy to cast as the villain, but Valmiki shows how she gets there: real affection for Rama, then a slow conversion through fear for her son’s future. The boons were real, freely granted, and hers to claim.\n\nThe question her story leaves is how far a legitimate right can be used to do an unjust thing — and how quickly ordinary insecurity, carefully fed, becomes cruelty."
+      },
+      "relations": [
+        { "id": "dasharatha", "label": "Husband" },
+        { "id": "bharata", "label": "Son" },
+        { "id": "manthara", "label": "Maid who turns her" },
+        { "id": "rama", "label": "Stepson she exiles" }
+      ],
+      "read": [
+        { "verseId": "ramayana_2_9_14", "label": "Reminded of her two boons" }
+      ]
+    },
+    {
+      "id": "manthara",
+      "name": "Manthara",
+      "sanskrit": "मन्थरा",
+      "aka": [],
+      "role": "Kaikeyi’s hunchbacked maid",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Manthara has served Kaikeyi since her childhood in Kekaya. Seeing Ayodhya decorated for Rama’s coronation, she sets out to stop it, persuading her mistress that Rama’s rise will ruin Bharata and Kaikeyi herself, and reminding her of the two boons. Without her, the Ramayana’s exile might never have happened.",
+      "relations": [
+        { "id": "kaikeyi", "label": "Her mistress" },
+        { "id": "shatrughna", "label": "Attacked her" }
+      ],
+      "read": [
+        { "verseId": "ramayana_2_7_2", "label": "Sees the city decorated" }
+      ]
+    },
+    {
+      "id": "lava-kusha",
+      "name": "Lava and Kusha",
+      "sanskrit": "लव · कुश",
+      "aka": [],
+      "role": "Twin sons of Rama and Sita, the first singers of the Ramayana",
+      "books": ["ramayana"],
+      "group": "ram-ayodhya",
+      "summary": "Born in Valmiki’s hermitage after Sita is sent away, the twins are taught the Ramayana by the sage himself. They sing it at Rama’s great horse sacrifice, where Rama hears the story of his own life from his sons and recognises them. In Valmiki’s frame, they are the poem’s first performers.",
+      "relations": [
+        { "id": "rama", "label": "Father" },
+        { "id": "sita", "label": "Mother" },
+        { "id": "valmiki", "label": "Teacher" }
+      ]
+    },
+    {
+      "id": "valmiki",
+      "name": "Valmiki",
+      "sanskrit": "वाल्मीकि",
+      "aka": ["Adikavi, the first poet"],
+      "role": "Sage and poet, author of the Ramayana",
+      "books": ["ramayana"],
+      "group": "ram-forest",
+      "summary": "Valmiki is remembered as the first poet. The Ramayana tells its own origin: watching a hunter shoot one of a pair of krauncha birds, Valmiki’s grief burst out in a curse that came out as a perfectly measured verse — a shloka. The god Brahma then charges him to tell Rama’s story in that metre.\n\nHe is also part of the story he tells: he shelters the banished Sita in his hermitage and teaches her sons to sing the poem. (Later legend makes him a reformed highway robber; the Ramayana itself says nothing of this.)",
+      "relations": [
+        { "id": "sita", "label": "Sheltered her" },
+        { "id": "lava-kusha", "label": "Taught them the poem" },
+        { "id": "rama", "label": "The hero of his poem" }
+      ],
+      "read": [
+        { "verseId": "ramayana_1_2_12", "label": "Sees the krauncha bird shot" }
+      ]
+    },
+    {
+      "id": "vishvamitra",
+      "name": "Vishvamitra",
+      "sanskrit": "विश्वामित्र",
+      "aka": ["Kaushika"],
+      "role": "King turned sage, Rama’s first guide",
+      "books": ["ramayana"],
+      "group": "ram-forest",
+      "summary": "Once a king, Vishvamitra became a great sage through fierce austerity. He comes to Dasharatha’s court asking for the young Rama to protect his sacrifice from rakshasas, and takes Rama and Lakshmana into the forest.\n\nAlong the way he teaches them divine weapons, tells them the old stories of the land, has Rama kill the demoness Tataka, frees Ahalya from her curse, and brings Rama to Mithila — where Rama breaks Shiva’s bow and wins Sita.",
+      "relations": [
+        { "id": "rama", "label": "Pupil" },
+        { "id": "lakshmana", "label": "Pupil" },
+        { "id": "ahalya", "label": "Brought Rama to her" }
+      ],
+      "read": [
+        { "verseId": "ramayana_1_24_15", "label": "Tells Rama not to shrink from killing Tataka" }
+      ]
+    },
+    {
+      "id": "ahalya",
+      "name": "Ahalya",
+      "sanskrit": "अहल्या",
+      "aka": [],
+      "role": "Wife of the sage Gautama, freed by Rama",
+      "books": ["ramayana"],
+      "group": "ram-forest",
+      "summary": "Ahalya is the wife of the sage Gautama. Indra, disguised as her husband, seduces her; in Valmiki’s telling she recognises him and consents. Gautama curses Indra, and curses her to live unseen, fasting on air, in the hermitage until Rama comes. When Rama arrives, the curse ends and she is restored and honoured.\n\n(The familiar image of Ahalya turned to stone comes from later retellings.)",
+      "dilemma": {
+        "title": "Who bears the blame?",
+        "body": "Valmiki does not hide Ahalya’s choice, and Indra is punished too. Yet it is she who spends years alone in penance. Her release by Rama has been read as grace, as justice, and — by many modern readers — as a story that asks why the punishment fell so unevenly."
+      },
+      "relations": [
+        { "id": "vishvamitra", "label": "Brought Rama to her" },
+        { "id": "rama", "label": "Freed her from the curse" }
+      ],
+      "read": [
+        { "verseId": "ramayana_1_47_15", "label": "Vishvamitra tells her story" }
+      ]
+    },
+    {
+      "id": "shabari",
+      "name": "Shabari",
+      "sanskrit": "शबरी",
+      "aka": [],
+      "role": "Forest ascetic who waited for Rama",
+      "books": ["ramayana"],
+      "group": "ram-forest",
+      "summary": "Shabari is an elderly woman ascetic, a disciple of the sages of Matanga’s hermitage near Lake Pampa, who stayed on after her teachers departed, waiting for Rama as they had told her to. When Rama and Lakshmana arrive, searching for Sita, she welcomes them, offers them fruits she has gathered, and shows them the hermitage. Then, her waiting fulfilled, she enters the fire and rises to join her teachers.\n\n(The well-known detail of her tasting each berry first comes from later devotional retellings; it is not in Valmiki.)",
+      "relations": [
+        { "id": "rama", "label": "The guest she waited for" },
+        { "id": "lakshmana", "label": "Welcomed him" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_70_4", "label": "Rama reaches her hermitage" }
+      ]
+    },
+    {
+      "id": "jatayu",
+      "name": "Jatayu",
+      "sanskrit": "जटायु",
+      "aka": [],
+      "role": "King of the vultures, who died defending Sita",
+      "books": ["ramayana"],
+      "group": "ram-forest",
+      "summary": "An aged vulture king and an old friend of Dasharatha, Jatayu meets Rama in the Panchavati forest and offers to watch over Sita. When Ravana carries her off, Jatayu attacks him in the air, smashes his chariot and kills the beasts that draw it, but he is old and alone, and Ravana cuts off his wings.\n\nHe lives just long enough to tell Rama that Ravana took Sita. Rama performs his funeral rites as he would for his own father.",
+      "relations": [
+        { "id": "sita", "label": "Fought to save her" },
+        { "id": "ravana", "label": "Cut off his wings" },
+        { "id": "rama", "label": "Performed his funeral rites" },
+        { "id": "dasharatha", "label": "Old friend" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_48_2", "label": "Confronts Ravana in the sky" }
+      ]
+    },
+    {
+      "id": "hanuman",
+      "name": "Hanuman",
+      "sanskrit": "हनुमान्",
+      "aka": ["Maruti", "Anjaneya", "Son of the Wind"],
+      "role": "Sugriva’s minister, and Rama’s greatest devotee",
+      "books": ["ramayana"],
+      "group": "ram-kishkindha",
+      "summary": "Hanuman, son of the wind god and the monkey Anjana, is Sugriva’s minister when he first meets Rama — sent to find out who the two strangers are. From that moment he is Rama’s. When the monkeys sent south despair at the ocean’s edge, the bear Jambavan recounts Hanuman’s birth and strength to him, and he leaps the hundred leagues to Lanka.\n\nHe finds Sita in the Ashoka grove, gives her Rama’s ring, sets the city ablaze with his own burning tail, and later carries a whole Himalayan peak to the battlefield when he cannot pick out the healing herbs. He is the model of a devotion that asks for nothing.",
+      "relations": [
+        { "id": "rama", "label": "The lord he serves" },
+        { "id": "sugriva", "label": "King and friend" },
+        { "id": "sita", "label": "Found her in Lanka" },
+        { "id": "jambavan", "label": "Roused him to leap" },
+        { "id": "ravana", "label": "Burned his city" }
+      ],
+      "read": [
+        { "verseId": "ramayana_4_3_1", "label": "First meets Rama" },
+        { "verseId": "ramayana_5_1_7", "label": "The great leap" },
+        { "verseId": "ramayana_5_51_9", "label": "Sets Lanka alight" }
+      ]
+    },
+    {
+      "id": "sugriva",
+      "name": "Sugriva",
+      "sanskrit": "सुग्रीव",
+      "aka": [],
+      "role": "Monkey king of Kishkindha, Rama’s ally",
+      "books": ["ramayana"],
+      "group": "ram-kishkindha",
+      "summary": "Sugriva is the younger brother of Vali, king of the monkeys. After a misunderstanding — Sugriva sealed a cave believing Vali dead inside it — Vali drives him out and takes his wife Ruma. Living in hiding on Mount Rishyamuka, Sugriva makes a pact with Rama: Rama will kill Vali, and Sugriva will send his armies to find Sita.\n\nOnce crowned, he lets the rainy season slip by in pleasure, forgetting his promise, until an angry Lakshmana comes to remind him.",
+      "relations": [
+        { "id": "vali", "label": "Brother and rival" },
+        { "id": "rama", "label": "Ally" },
+        { "id": "hanuman", "label": "Minister" },
+        { "id": "angada", "label": "Nephew and heir" }
+      ],
+      "read": [
+        { "verseId": "ramayana_4_2_13", "label": "Sends Hanuman to the strangers" }
+      ]
+    },
+    {
+      "id": "vali",
+      "name": "Vali",
+      "sanskrit": "वाली",
+      "aka": ["Bali"],
+      "role": "King of the monkeys, killed by Rama",
+      "books": ["ramayana"],
+      "group": "ram-kishkindha",
+      "summary": "Vali, son of Indra, is the mighty king of Kishkindha. Returning from a long fight in a cave to find his brother Sugriva on the throne, he believes he has been betrayed, exiles him and takes his wife.\n\nWhen Sugriva challenges him to a duel with Rama’s backing, Rama shoots Vali from behind a tree. Dying, Vali accuses Rama of cowardice and injustice; Rama answers him, and Vali, in the end, accepts it and entrusts his son Angada to him.",
+      "dilemma": {
+        "title": "An arrow from hiding",
+        "body": "Vali’s accusation is the Ramayana’s sharpest challenge to its hero: he was fighting someone else, had done Rama no harm, and was struck down unseen.\n\nRama’s reply has several layers — the land belongs to the Ikshvaku line, now ruled by Bharata, whose agent Rama is; Vali has taken his brother’s wife, a crime deserving death; and a king may strike an animal from cover, as hunters do. Vali concedes. Many readers do not, and the episode is one of the most debated in the poem."
+      },
+      "relations": [
+        { "id": "sugriva", "label": "Brother and rival" },
+        { "id": "rama", "label": "Killed him" },
+        { "id": "angada", "label": "Son" }
+      ],
+      "read": [
+        { "verseId": "ramayana_4_17_1", "label": "Vali’s reproach" },
+        { "verseId": "ramayana_4_18_18", "label": "Rama’s answer" }
+      ]
+    },
+    {
+      "id": "angada",
+      "name": "Angada",
+      "sanskrit": "अङ्गद",
+      "aka": [],
+      "role": "Vali’s son, prince of Kishkindha",
+      "books": ["ramayana"],
+      "group": "ram-kishkindha",
+      "summary": "Vali’s son by his queen Tara. After his father’s death, he is made Sugriva’s heir. He leads the search party that reaches the southern ocean, and before the war Rama sends him to Ravana’s court as an envoy, with one last chance to return Sita.",
+      "relations": [
+        { "id": "vali", "label": "Father" },
+        { "id": "sugriva", "label": "Uncle" },
+        { "id": "hanuman", "label": "Companion in the search" },
+        { "id": "rama", "label": "Sent him as envoy" }
+      ]
+    },
+    {
+      "id": "jambavan",
+      "name": "Jambavan",
+      "sanskrit": "जाम्बवान्",
+      "aka": [],
+      "role": "King of the bears, elder of Rama’s army",
+      "books": ["ramayana"],
+      "group": "ram-kishkindha",
+      "summary": "Jambavan is the aged king of the bears who joins the search for Sita. On the shore of the southern ocean, when no one in the monkey army dares the leap to Lanka, he turns to the silent Hanuman and recounts his birth and powers until Hanuman rises to the task.\n\nIn the war, gravely wounded himself, it is Jambavan who sends Hanuman to the Himalayas for the healing herbs.",
+      "relations": [
+        { "id": "hanuman", "label": "Roused him to make the leap" },
+        { "id": "rama", "label": "Fought for him" }
+      ],
+      "read": [
+        { "verseId": "ramayana_4_65_1", "label": "Turns to Hanuman" }
+      ]
+    },
+    {
+      "id": "ravana",
+      "name": "Ravana",
+      "sanskrit": "रावण",
+      "aka": ["Dashagriva", "Dashanana", "Lord of Lanka"],
+      "role": "Ten-headed king of the rakshasas of Lanka",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "Ravana, king of Lanka, is a figure of enormous power and learning. Through austerities he won a boon that no god, demon or celestial being could kill him — he did not think to ask protection from men. He has humbled the gods and takes what he wants.\n\nWhen his sister Shurpanakha comes to him mutilated and describes Sita’s beauty, he resolves to carry Sita off. He keeps her in the Ashoka grove for months, alternately courting and threatening her. He rejects every counsel to give her back — from his brothers Vibhishana and Kumbhakarna, from his wife Mandodari — and dies at Rama’s hand.",
+      "dilemma": {
+        "title": "Pride against counsel",
+        "body": "Ravana is told, repeatedly and by people who love him, that he is wrong and will be destroyed: Maricha warns him, Vibhishana begs him, Kumbhakarna tells him plainly he acted rashly, Mandodari pleads.\n\nHe hears them all and goes on. His story is less about evil as a force than about a brilliant ruler whose pride will not let him admit a mistake — even when the cost is his brothers, his sons and his city."
+      },
+      "relations": [
+        { "id": "sita", "label": "The woman he abducted" },
+        { "id": "rama", "label": "Enemy" },
+        { "id": "vibhishana", "label": "Brother who left him" },
+        { "id": "kumbhakarna", "label": "Brother who fought for him anyway" },
+        { "id": "indrajit", "label": "Son" },
+        { "id": "mandodari", "label": "Chief queen" },
+        { "id": "shurpanakha", "label": "Sister" },
+        { "id": "maricha", "label": "Forced him into the plot" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_47_16", "label": "Seizes Sita" },
+        { "verseId": "ramayana_6_97_16", "label": "His death" }
+      ]
+    },
+    {
+      "id": "vibhishana",
+      "name": "Vibhishana",
+      "sanskrit": "विभीषण",
+      "aka": [],
+      "role": "Ravana’s brother, who crossed over to Rama",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "The youngest brother of Ravana and a follower of dharma, Vibhishana urges Ravana in open council to return Sita and avoid ruin. Ravana insults him as a traitor, and Vibhishana leaves Lanka with four companions to ask Rama for refuge.\n\nSugriva suspects a spy, but Rama accepts him, declaring he would grant safety to anyone who came for shelter — Vibhishana or Ravana himself. Vibhishana’s knowledge of Lanka helps win the war, and Rama crowns him its king.",
+      "dilemma": {
+        "title": "Brother, or the right?",
+        "body": "Vibhishana does what the epic’s moral logic seems to ask: he tells the king the truth, and when the king will not listen, he joins the side of dharma. Yet a Hindi proverb still remembers him otherwise — ghar ka bhedi Lanka dhaye, ‘the insider brings down Lanka’.\n\nKumbhakarna, who also thought Ravana wrong, chose to die beside him. The Ramayana sets the two brothers side by side and lets readers weigh loyalty to family against loyalty to the right."
+      },
+      "relations": [
+        { "id": "ravana", "label": "Elder brother" },
+        { "id": "kumbhakarna", "label": "Brother who stayed" },
+        { "id": "rama", "label": "Gave him refuge" },
+        { "id": "sugriva", "label": "Suspected him" }
+      ],
+      "read": [
+        { "verseId": "ramayana_6_11_8", "label": "Arrives seeking refuge" }
+      ]
+    },
+    {
+      "id": "kumbhakarna",
+      "name": "Kumbhakarna",
+      "sanskrit": "कुम्भकर्ण",
+      "aka": [],
+      "role": "Ravana’s giant brother, who sleeps for months at a time",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "A giant of terrifying appetite and strength, Kumbhakarna sleeps for months on end — in the Uttara Kanda, the result of a boon that came out wrong. Woken with great difficulty when the war turns against Lanka, he tells Ravana bluntly that he acted rashly and without proper counsel.\n\nThen he goes out to fight for him anyway, wreaks havoc in the monkey army, captures Sugriva, and is killed by Rama.",
+      "dilemma": {
+        "title": "Right, or my brother?",
+        "body": "Kumbhakarna is the counterpart to Vibhishana: he sees Ravana’s error just as clearly and says so to his face, but will not abandon him. He fights because Ravana is his brother and his king.\n\nIs that loyalty a virtue, or complicity? The Ramayana gives him a warrior’s death and a kind of grudging honour, and leaves the question open."
+      },
+      "relations": [
+        { "id": "ravana", "label": "Elder brother he fights for" },
+        { "id": "vibhishana", "label": "Brother who left" },
+        { "id": "rama", "label": "Killed him" }
+      ],
+      "read": [
+        { "verseId": "ramayana_6_51_4", "label": "Tells Ravana he has erred" }
+      ]
+    },
+    {
+      "id": "indrajit",
+      "name": "Indrajit",
+      "sanskrit": "इन्द्रजित्",
+      "aka": ["Meghanada"],
+      "role": "Ravana’s son, conqueror of Indra",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "Ravana’s son Meghanada earned the name Indrajit — conqueror of Indra — by defeating the king of the gods. A master of illusion who fights unseen from the clouds, he twice brings down Rama and Lakshmana, with serpent arrows and then a weapon of Brahma, and kills an illusory Sita before the monkeys’ eyes to break their spirit.\n\nLakshmana kills him after Vibhishana guides the attack to the grove where Indrajit is performing a rite that would have made him unbeatable.",
+      "relations": [
+        { "id": "ravana", "label": "Father" },
+        { "id": "lakshmana", "label": "Killed him" },
+        { "id": "vibhishana", "label": "Revealed his secret" },
+        { "id": "mandodari", "label": "Mother" }
+      ]
+    },
+    {
+      "id": "mandodari",
+      "name": "Mandodari",
+      "sanskrit": "मन्दोदरी",
+      "aka": [],
+      "role": "Ravana’s chief queen",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "Mandodari, daughter of the demon architect Maya, is Ravana’s chief queen and the mother of Indrajit. Hanuman, searching the palace at night, at first mistakes her sleeping beauty for Sita’s.\n\nAfter Ravana’s death she laments him on the battlefield — grieving the husband and warrior, and naming plainly the desire for Sita that destroyed him, against which she had warned him.",
+      "relations": [
+        { "id": "ravana", "label": "Husband" },
+        { "id": "indrajit", "label": "Son" }
+      ]
+    },
+    {
+      "id": "shurpanakha",
+      "name": "Shurpanakha",
+      "sanskrit": "शूर्पणखा",
+      "aka": [],
+      "role": "Ravana’s sister, whose humiliation began the war",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "Shurpanakha, Ravana’s sister, meets Rama in the Panchavati forest and asks him to marry her. Rama jokes and sends her to Lakshmana; Lakshmana sends her back. Humiliated, she lunges at Sita, and at Rama’s word Lakshmana cuts off her nose and ears.\n\nShe goes first to her brother Khara, whose army Rama destroys, and then to Ravana — and the war begins with her.",
+      "dilemma": {
+        "title": "A punishment out of all proportion?",
+        "body": "The brothers’ teasing of Shurpanakha and the mutilation that follows sit uneasily with many readers. In the poem her advance is unwelcome and her attack on Sita real, and the rakshasas are a constant threat to the forest’s hermits. But the cruelty of the response, and the mockery before it, set everything that follows in motion — a reminder that the epic’s heroes are not shown as flawless."
+      },
+      "relations": [
+        { "id": "ravana", "label": "Brother" },
+        { "id": "rama", "label": "Spurned her" },
+        { "id": "lakshmana", "label": "Disfigured her" },
+        { "id": "sita", "label": "Attacked her" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_16_17", "label": "Meets Rama" }
+      ]
+    },
+    {
+      "id": "maricha",
+      "name": "Maricha",
+      "sanskrit": "मारीच",
+      "aka": [],
+      "role": "The rakshasa who became the golden deer",
+      "books": ["ramayana"],
+      "group": "ram-lanka",
+      "summary": "Maricha, son of the demoness Tataka, once tried to disrupt Vishvamitra’s sacrifice and was flung far out over the ocean by the young Rama’s arrow. Having learned to fear Rama, he lives as an ascetic — until Ravana orders him to become a golden deer and lure Rama away.\n\nHe warns Ravana against the plan and refuses, until Ravana threatens to kill him. Struck by Rama’s arrow, he cries out in Rama’s voice for Sita and Lakshmana, drawing Lakshmana away too.",
+      "dilemma": {
+        "title": "Death either way",
+        "body": "Maricha’s choice is between certain death from Ravana now and likely death from Rama later. He chooses the second, and goes. Unwilling as he is, his cry for help is what leaves Sita alone."
+      },
+      "relations": [
+        { "id": "ravana", "label": "Forced him into the plot" },
+        { "id": "rama", "label": "Killed him" },
+        { "id": "sita", "label": "Lured her with the deer" }
+      ],
+      "read": [
+        { "verseId": "ramayana_3_40_12", "label": "Becomes the golden deer" }
+      ]
+    }
+  ]
+}

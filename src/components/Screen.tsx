@@ -1,40 +1,22 @@
-import React, { useCallback, useRef, type ReactNode } from 'react';
-import { Animated, Platform, StyleSheet, Text, View, type ViewStyle } from 'react-native';
+import React, { type ReactNode } from 'react';
+import { StyleSheet, Text, View, type ViewStyle } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useFocusEffect } from '@react-navigation/native';
 import { useTheme } from '@/theme/ThemeProvider';
 
 interface ScreenProps {
   title?: string;
+  // Small line under the title (e.g. a count or a one-line purpose).
+  subtitle?: string;
+  // Icon buttons shown at the right end of the title row.
+  right?: ReactNode;
   children: ReactNode;
   contentStyle?: ViewStyle;
 }
 
-export function Screen({ title, children, contentStyle }: ScreenProps) {
+// Tab screens. Navigation between tabs is instant on purpose (UI.md: no
+// fade-ins on basic navigation — they make the app feel slow).
+export function Screen({ title, subtitle, right, children, contentStyle }: ScreenProps) {
   const theme = useTheme();
-  const opacity = useRef(new Animated.Value(0)).current;
-  const translateY = useRef(new Animated.Value(10)).current;
-
-  useFocusEffect(
-    useCallback(() => {
-      Animated.parallel([
-        Animated.timing(opacity, {
-          toValue: 1,
-          duration: 210,
-          useNativeDriver: Platform.OS !== 'web',
-        }),
-        Animated.timing(translateY, {
-          toValue: 0,
-          duration: 210,
-          useNativeDriver: Platform.OS !== 'web',
-        }),
-      ]).start();
-      return () => {
-        opacity.setValue(0);
-        translateY.setValue(10);
-      };
-    }, [])
-  );
 
   return (
     <SafeAreaView
@@ -43,44 +25,52 @@ export function Screen({ title, children, contentStyle }: ScreenProps) {
     >
       {title ? (
         <View style={[styles.titleRow, { paddingHorizontal: theme.spacing.md }]}>
-          <Text
-            style={{
-              fontFamily: theme.fonts.display,
-              fontSize: theme.fontSize.xl,
-              color: theme.colors.textPrimary,
-            }}
-          >
-            {title}
-          </Text>
-          {/* Short accent rule — gives titles the deliberate, printed-book feel. */}
-          <View
-            style={{
-              height: 3,
-              width: 32,
-              borderRadius: 2,
-              backgroundColor: theme.colors.accent,
-              marginTop: 8,
-              opacity: 0.85,
-            }}
-          />
+          <View style={{ flex: 1 }}>
+            <Text
+              accessibilityRole="header"
+              style={{
+                fontFamily: theme.fonts.display,
+                fontSize: theme.fontSize.xl,
+                color: theme.colors.textPrimary,
+              }}
+            >
+              {title}
+            </Text>
+            {/* Short accent rule — gives titles the deliberate, printed-book feel. */}
+            <View
+              style={{
+                height: 3,
+                width: 32,
+                borderRadius: 2,
+                backgroundColor: theme.colors.accent,
+                marginTop: 8,
+                opacity: 0.85,
+              }}
+            />
+            {subtitle ? (
+              <Text
+                style={{
+                  fontFamily: theme.fonts.ui,
+                  fontSize: theme.fontSize.sm,
+                  color: theme.colors.textSecondary,
+                  marginTop: 10,
+                }}
+              >
+                {subtitle}
+              </Text>
+            ) : null}
+          </View>
+          {right ? <View style={styles.right}>{right}</View> : null}
         </View>
       ) : null}
-      <Animated.View
-        style={[
-          styles.content,
-          contentStyle,
-          { opacity },
-          Platform.OS !== 'web' ? { transform: [{ translateY }] } : null,
-        ]}
-      >
-        {children}
-      </Animated.View>
+      <View style={[styles.content, contentStyle]}>{children}</View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   safe: { flex: 1 },
-  titleRow: { paddingTop: 12, paddingBottom: 12 },
+  titleRow: { paddingTop: 12, paddingBottom: 12, flexDirection: 'row', alignItems: 'flex-start' },
+  right: { flexDirection: 'row', alignItems: 'center', gap: 4, marginTop: 2 },
   content: { flex: 1 },
 });

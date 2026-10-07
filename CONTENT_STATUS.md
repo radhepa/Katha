@@ -40,17 +40,44 @@ and `scripts/_ramayana_pairs.json`.
 See `FILL_SUMMARY.md`, `VERIFICATION_LOG.md`, `FLAGGED_VERSES.md` for the Gita fill detail
 (sources, the Ch13=35 recension note, the BG 18.66 variant, and what remains).
 
+## Characters & Events (added 2026-10-06)
+
+`characters.json` (54 people) and `events.json` (58 episodes) power the
+Characters and Events tabs. They are **explanatory guides written for Katha,
+not scripture**: short descriptions, why each episode happens, and the moral
+dilemmas the texts raise, in the explanatory (not devotional) tone of DATA.md.
+They follow the critical editions the app ships and say so where popular
+retellings differ (Lakshmana's line, Shabari's berries, Draupadi's prayer to
+Krishna, Ahalya turned to stone, Shakuni's revenge motive).
+
+- 52 events link to the verse where the episode begins; the Reader shows a
+  "story note" above that verse. 6 Mahabharata events (Virata, Drona, Karna,
+  Shalya and Sauptika Parvas) are summaries only, because those parvas are not
+  in the bundled text.
+- `node scripts/verify-companions.mjs` checks every passage link against the
+  bundled verses, every cross-reference between characters and events, and
+  that every Devanagari name appears in the Sanskrit of its book. Run it after
+  any edit to either file.
+
+## Generated index files
+
+`index.json` (book meta, chapter lists, sarga/adhyaya jump points) and
+`daily.json` (the daily-verse pool) are generated from the three book files so
+Home and Library never parse the full texts. Re-run
+`node scripts/build-index.mjs` after any change to `gita.json`,
+`ramayana.json` or `mahabharata.json`.
+
 ## Why so small
 
 Per `DONTS.md`:
-- **Do not generate scripture text with AI.** Sanskrit must come from verified
+- **Never generate or reconstruct scripture text.** Sanskrit must come from verified
   source texts only. Each Sanskrit verse in the seed is one that is reproduced
   identically across the most widely cited print and digital editions (Sacred
   Texts, GRETIL, ISKCON, Gita Press) and that I could include with high
   confidence in the exact reading.
-- **Do not ship unreviewed AI translations.** Hindi / Gujarati / Tamil
+- **Do not ship unreviewed translations.** Hindi / Gujarati / Tamil
   translations and the non-English explanations are intentionally omitted from
-  this seed. They must be authored or AI-drafted-then-human-reviewed per
+  this seed. They must be authored, or drafted and then human-reviewed, per
   DATA.md §5 before ship.
 
 ## What remains to do before V1 ship

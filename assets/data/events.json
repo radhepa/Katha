@@ -1,0 +1,794 @@
+{
+  "events": [
+    {
+      "id": "arjuna-despair",
+      "book": "gita",
+      "order": 1,
+      "title": "Arjuna Lays Down His Bow",
+      "where": "Chapter 1",
+      "summary": "On the morning of battle at Kurukshetra, Arjuna asks Krishna to drive his chariot between the two armies so he can see whom he must fight. He sees grandfathers, teachers, uncles, cousins and friends. His limbs fail, his bow slips from his hand, and he sinks down in the chariot: he will not fight.",
+      "why": "Arjuna is not a coward — he is the finest warrior on the field. What breaks him is understanding, for the first time, what victory will mean: the deaths of people he loves and reveres, and the collapse of the families and traditions they hold together. Such a war, he argues, can only bring sin and ruin, and no kingdom is worth it.",
+      "dilemma": {
+        "title": "Can it be right to fight a just war against those you love?",
+        "body": "Arjuna’s case is strong: killing his elders and kin seems to violate the very dharma the war is meant to restore. The case Krishna makes over the next seventeen chapters is that walking away would not save them, would abandon his duty to protect the innocent and uphold justice, and that his grief rests on a mistaken view of who we are.\n\nThe Gita begins with this dilemma and never pretends it is easy."
+      },
+      "characters": ["arjuna", "krishna", "sanjaya", "dhritarashtra"],
+      "ref": "gita_1_21"
+    },
+    {
+      "id": "teaching-begins",
+      "book": "gita",
+      "order": 2,
+      "title": "The Teaching Begins",
+      "where": "Chapter 2",
+      "summary": "Confused about his duty, Arjuna asks Krishna, as a student asks a teacher, to tell him plainly what is right — and then says he will not fight. Krishna begins: the wise grieve neither for the living nor for the dead. The self is never born and never dies; the embodied self casts off worn-out bodies as a man casts off worn-out clothes. A warrior who refuses a righteous fight abandons his own dharma. And action should be done without attachment to its results — in Besant’s words, ‘thy business is with the action only, never with its fruits’.",
+      "why": "Krishna’s first answer meets Arjuna’s grief from two sides. Philosophically, death is not what Arjuna thinks it is: the self cannot be killed. Practically, every role carries duties, and abandoning them out of feeling does harm, not good. He then introduces the idea that runs through the whole Gita — that action itself is not the problem; craving for its rewards is.",
+      "characters": ["krishna", "arjuna"],
+      "ref": "gita_2_7"
+    },
+    {
+      "id": "cosmic-form",
+      "book": "gita",
+      "order": 3,
+      "title": "The Cosmic Form",
+      "where": "Chapter 11",
+      "summary": "Arjuna asks to see Krishna’s divine form, and Krishna gives him divine sight. Arjuna sees the whole universe in one body — countless faces, arms and eyes, as if a thousand suns blazed at once — and then the warriors of both armies rushing into its blazing mouths. Krishna declares himself Time, the destroyer of worlds: these warriors are already overcome, and Arjuna is only the outward cause. Terrified, Arjuna begs him to return to his familiar form.",
+      "why": "The vision answers Arjuna’s doubt in a way argument cannot. If the outcome of the war is already woven into the order of things, his refusal would change nothing except his own part in it. It also changes the relationship between them: Arjuna apologises for having treated Krishna casually, as a friend, and the Gita’s last chapters turn toward devotion.",
+      "dilemma": {
+        "title": "If all is already decided, are we responsible?",
+        "body": "Krishna’s words — ‘by Me they are already overcome, be thou the outward cause’ — raise the oldest question about fate and freedom. If the end is fixed, does Arjuna’s choice matter?\n\nThe Gita’s answer is that it matters for Arjuna: the world will go on either way, but whether he acts from fear, from duty or from surrender is still his to decide."
+      },
+      "characters": ["krishna", "arjuna", "sanjaya"],
+      "ref": "gita_11_9"
+    },
+    {
+      "id": "last-word",
+      "book": "gita",
+      "order": 4,
+      "title": "The Last Word",
+      "where": "Chapter 18",
+      "summary": "Krishna closes his teaching by handing it back: having heard it all, Arjuna should reflect fully, then act as he chooses. Then he offers one last word — abandon all duties and come to him alone for shelter, and he will free Arjuna from all sin. Arjuna answers that his delusion is destroyed and his doubts are gone; he will do as Krishna says. Sanjaya, ending his report to the blind king, declares that wherever Krishna and Arjuna are, there will be prosperity and victory.",
+      "why": "After seventeen chapters on duty, knowledge, meditation and devotion, the Gita ends not with a command but with a choice. Arjuna has been given reasons; now he must act from his own understanding. The verse on surrender (18.66) has been read in many ways — as the summit of devotion, as release from the anxious calculation of duties, as trust replacing fear.",
+      "characters": ["krishna", "arjuna", "sanjaya", "dhritarashtra"],
+      "ref": "gita_18_63"
+    },
+    {
+      "id": "bhishma-vow",
+      "book": "mahabharata",
+      "order": 1,
+      "title": "Bhishma’s Terrible Vow",
+      "where": "Adi Parva",
+      "summary": "King Shantanu falls in love with Satyavati, a fisherman’s daughter, but her father will agree to the marriage only if her son inherits the throne — and Shantanu already has an heir, his son Devavrata. Learning why his father is pining, Devavrata goes to the fisherman himself and renounces the throne. To remove the last objection, he vows never to marry or father children. Flowers fall from the sky and voices name him Bhishma: the one of the terrible vow.",
+      "why": "The fisherman’s worry is practical: even if Devavrata gives up the crown, his sons might one day claim it. A vow of lifelong celibacy is the only promise that ends the question. Devavrata makes it out of love for his father — and in doing so leaves the Kuru line depending on Satyavati’s sons, which is how, two generations later, the throne comes to be disputed at all.",
+      "dilemma": {
+        "title": "Can a promise made for love become a trap?",
+        "body": "Bhishma’s vow is admired as the purest self-sacrifice. It also has consequences no one foresees: when Satyavati’s sons die without heirs, he refuses even her own plea to break it. Decades later it still binds him — to the throne, to Dhritarashtra, and finally to Duryodhana’s side in a war he believes is wrong.\n\nThe epic asks whether a vow’s worth lies in keeping it no matter what, or in the good it was meant to serve."
+      },
+      "characters": ["bhishma", "satyavati"],
+      "ref": "mbh_1_94_42"
+    },
+    {
+      "id": "karna-birth",
+      "book": "mahabharata",
+      "order": 2,
+      "title": "Karna Is Born, and Set Adrift",
+      "where": "Adi Parva",
+      "summary": "As a girl, Kunti serves the irascible sage Durvasa so well that he gives her a mantra to summon any god and bear his child. Curious, she tries it on the sun. Surya appears and gives her a son, born wearing golden armour and earrings. Afraid of disgrace, the unmarried Kunti casts the baby away on the water. The charioteer Adhiratha and his wife Radha find him and raise him as their own.",
+      "why": "Kunti acts out of youthful curiosity and then fear: an unmarried princess with a child would be ruined. Her choice shapes the whole epic. Karna grows up as the son of a suta, a charioteer, kept from the honour his skill deserves — and, without knowing it, as the eldest brother of the Pandavas he comes to hate.",
+      "characters": ["kunti", "karna"],
+      "ref": "mbh_1_104_8"
+    },
+    {
+      "id": "pandu-curse",
+      "book": "mahabharata",
+      "order": 3,
+      "title": "Pandu’s Curse",
+      "where": "Adi Parva",
+      "summary": "Out hunting, King Pandu shoots a deer as it mates. The deer is a sage who had taken animal form; dying, he curses Pandu to die in the arms of a woman he loves. Pandu gives up his kingdom to live as an ascetic in the forest. Kunti reveals the mantra Durvasa gave her, and with it she and Pandu’s second wife Madri bear five sons by the gods. Years later, overcome by desire for Madri in the spring woods, Pandu embraces her and dies.",
+      "why": "The sage’s complaint is about timing and decency, not hunting itself: even an enemy, he says, is not struck when unprepared. The curse explains why the Pandavas are sons of Pandu in name only — and why Dhritarashtra, not Pandu’s line, ends up holding the throne, the root of Duryodhana’s claim.",
+      "characters": ["pandu", "kunti"],
+      "ref": "mbh_1_109_5"
+    },
+    {
+      "id": "ekalavya-thumb",
+      "book": "mahabharata",
+      "order": 4,
+      "title": "Ekalavya’s Thumb",
+      "where": "Adi Parva",
+      "summary": "Ekalavya, son of the Nishada king Hiranyadhanu, asks Drona to teach him archery and is refused. He returns to the forest, makes a clay image of Drona, and trains before it until he is a better archer than Arjuna. When the princes stumble on him, Arjuna reminds Drona of his promise that no pupil would ever surpass him. Drona goes to Ekalavya and asks for his teacher’s fee: his right thumb. Ekalavya cuts it off and gives it.",
+      "why": "Drona had promised Arjuna he would be the greatest archer in the world, and Ekalavya’s skill makes that promise false. The text also says plainly that Drona turned Ekalavya away because he was a Nishada, outside the royal order. By claiming the fee owed to a teacher, Drona keeps his promise to one pupil by maiming another.",
+      "dilemma": {
+        "title": "What does a teacher owe a student he never accepted?",
+        "body": "Ekalavya treats Drona as his guru with total devotion; Drona treats the bond as real only when it can be used against him. The episode raises questions about loyalty, about who is allowed to learn, and about a promise kept at the cost of justice.\n\nThe text records Ekalavya’s sacrifice without comment — and notes that afterwards his arrows were never as swift."
+      },
+      "characters": ["ekalavya", "drona", "arjuna"],
+      "ref": "mbh_1_123_10"
+    },
+    {
+      "id": "tournament",
+      "book": "mahabharata",
+      "order": 5,
+      "title": "Karna at the Tournament",
+      "where": "Adi Parva",
+      "summary": "At the tournament where Drona’s pupils display their skills, Arjuna dazzles the crowd — until an unknown warrior enters and repeats every feat. It is Karna. He challenges Arjuna to single combat, but Kripa demands to know his lineage: princes fight only their equals. Karna falls silent. Duryodhana makes him king of Anga on the spot, so he can fight as a king. Then old Adhiratha the charioteer walks in, and Karna bows to him as his father; Bhima mocks him as fit only to hold a whip.",
+      "why": "The challenge falls on birth, not skill, and Duryodhana sees his chance: an archer equal to Arjuna, bound to him by gratitude. His gesture is generous and calculating at once. For Karna it is the first time anyone has honoured him, and he pledges Duryodhana his friendship for life.",
+      "dilemma": {
+        "title": "Merit or birth?",
+        "body": "The scene is the epic’s clearest statement of a problem it never resolves: Karna is as gifted as Arjuna, yet the rules of the arena turn on whose son he is. Duryodhana argues that heroes, like rivers, are known by what they do, not by where they come from.\n\nThe epic’s response is mixed — it mocks Karna through Bhima, but gives Duryodhana the better argument in this moment."
+      },
+      "characters": ["karna", "arjuna", "duryodhana", "bhima", "drona"],
+      "ref": "mbh_1_126_1"
+    },
+    {
+      "id": "lac-house",
+      "book": "mahabharata",
+      "order": 6,
+      "title": "The House of Lac",
+      "where": "Adi Parva",
+      "summary": "Duryodhana sends the Pandavas and Kunti to Varanavata, where his agent Purochana has built them a fine house of lac, ghee and other things that burn. Warned by Vidura in a coded message, the Pandavas dig a tunnel and wait a year. Then they set the house alight themselves the night they escape, and Purochana dies in the fire — along with a Nishada woman and her five sons who had come to a feast there, drunk, and fallen asleep. Their bodies convince everyone that the Pandavas are dead.",
+      "why": "Duryodhana wants the Pandavas dead without being blamed — a fire would look like an accident. The Pandavas, knowing they are watched, cannot simply leave; their escape needs bodies to be found. Their supposed death lets them live in disguise as brahmins, which is how Arjuna comes to win Draupadi.",
+      "dilemma": {
+        "title": "Six lives for their escape",
+        "body": "The text says the Nishada woman and her sons came there ‘impelled by fate’, and moves on. Modern readers often stop here: the heroes’ survival depends on the deaths of a poor family who happened to be asleep in the house when it was lit.\n\nWhat the Pandavas knew, and what that would mean, is a question the epic leaves unasked."
+      },
+      "characters": ["duryodhana", "vidura", "bhima", "yudhishthira", "kunti"],
+      "ref": "mbh_1_136_1"
+    },
+    {
+      "id": "svayamvara",
+      "book": "mahabharata",
+      "order": 7,
+      "title": "Draupadi’s Svayamvara",
+      "where": "Adi Parva",
+      "summary": "King Drupada sets an almost impossible test for his daughter’s suitors: string a massive bow and hit a target high above a revolving device. Kings fail one after another. Arjuna, disguised as a brahmin, succeeds. When the brothers bring Draupadi home and call out that they have brought alms, Kunti, without looking, tells them to share it among them. Seeing a bride, she is aghast — but the word has been spoken, and after much debate Draupadi marries all five brothers.",
+      "why": "Kunti’s careless words cannot simply be unsaid: in the epic’s world a mother’s command and the truth of speech carry great weight. Yudhishthira also fears that rivalry over Draupadi could split the brothers. Drupada objects that one woman with many husbands is against custom; Vyasa settles it by telling of Draupadi’s past life, in which Shiva granted her five husbands.",
+      "dilemma": {
+        "title": "Must a careless word be kept?",
+        "body": "The marriage is defended on several grounds — Kunti’s word, the brothers’ unity, older precedents, and destiny. Drupada and his son still find it troubling, and later Karna will use it to insult Draupadi in the dice hall.\n\nThe episode shows the epic working hard to reconcile an unusual marriage with the rules it holds dear."
+      },
+      "characters": ["draupadi", "arjuna", "kunti", "yudhishthira", "vyasa"],
+      "ref": "mbh_1_182_1"
+    },
+    {
+      "id": "khandava",
+      "book": "mahabharata",
+      "order": 8,
+      "title": "The Burning of the Khandava Forest",
+      "where": "Adi Parva",
+      "summary": "Resting by the Yamuna, Krishna and Arjuna are approached by a brahmin who reveals himself as Agni, the fire god. He is sick and must consume the Khandava forest, but Indra guards it with rain. Armed by Agni — Arjuna with the bow Gandiva and a chariot, Krishna with his discus — the two keep every creature from escaping and hold off Indra and the gods while the forest burns. Only a few survive, among them the demon architect Maya, who in gratitude builds the Pandavas their wondrous assembly hall.",
+      "why": "Agni needs the forest to cure himself after years of consuming too many oblations; Indra protects it for his friend, the serpent Takshaka, who lives there. The episode arms Arjuna with Gandiva and gives the Pandavas Maya’s hall — the splendour that makes Duryodhana jealous enough to plot the game of dice.",
+      "dilemma": {
+        "title": "A gift to a god, or a massacre?",
+        "body": "The burning is told as a heroic feat, yet the text does not soften it: animals and birds trying to flee are cut down, and the whole forest burns. Some readers see the clearing of wilderness for the new kingdom of Indraprastha; others, a dark display of power at the heroes’ moment of triumph.\n\nThe epic describes the slaughter in vivid detail and lets it stand."
+      },
+      "characters": ["krishna", "arjuna"],
+      "ref": "mbh_1_215_1"
+    },
+    {
+      "id": "shishupala",
+      "book": "mahabharata",
+      "order": 9,
+      "title": "The Death of Shishupala",
+      "where": "Sabha Parva",
+      "summary": "At Yudhishthira’s rajasuya — the sacrifice that proclaims him emperor — Bhishma advises that the first honour go to Krishna, and Sahadeva presents it. Shishupala, king of Chedi, explodes: Krishna is not even a king, and the Pandavas are fools. He storms out with his allies, returns to rail at Bhishma, and challenges Krishna. Krishna says he had promised Shishupala’s mother to pardon a hundred offences, and the hundred are now spent. He kills Shishupala with his discus.",
+      "why": "Honouring Krishna above all the kings present is a statement about where real power lies. Shishupala, already Krishna’s bitter enemy, takes it as an insult to every king in the hall. Krishna’s patience, and its limit, are the point of the story.",
+      "characters": ["krishna", "shishupala", "bhishma", "sahadeva", "yudhishthira"],
+      "ref": "mbh_2_33_31"
+    },
+    {
+      "id": "dice-game",
+      "book": "mahabharata",
+      "order": 10,
+      "title": "The Game of Dice",
+      "where": "Sabha Parva",
+      "summary": "Jealous of the Pandavas’ new hall and wealth, Duryodhana takes Shakuni’s advice: challenge Yudhishthira to dice, with Shakuni throwing for the Kauravas. Yudhishthira says openly that deceitful gambling is a sin — then plays. He loses his jewels, his treasure, his army and his kingdom; then he stakes and loses his brothers one by one, then himself, and finally Draupadi.",
+      "why": "Duryodhana cannot defeat the Pandavas in battle and has failed to kill them. A game lets him win everything ‘lawfully’. Yudhishthira plays because a king of his code did not refuse a challenge, because his uncle the king had summoned him, and — the text does not hide it — because he could not stop.",
+      "dilemma": {
+        "title": "Why didn’t he walk away?",
+        "body": "Yudhishthira is the most righteous man in the epic, and he gambles away his brothers and his wife. His defenders say he was bound by honour and obedience; his critics, Bhima and Draupadi among them, say he was weak.\n\nThe game is the hinge of the Mahabharata, and the question of how a good man ends up doing this is left squarely with the reader."
+      },
+      "characters": ["yudhishthira", "shakuni", "duryodhana", "dhritarashtra", "vidura", "draupadi"],
+      "ref": "mbh_2_53_1"
+    },
+    {
+      "id": "draupadi-question",
+      "book": "mahabharata",
+      "order": 11,
+      "title": "Draupadi’s Question",
+      "where": "Sabha Parva",
+      "summary": "Draupadi, now ‘won’, is ordered into the hall. She sends back a question instead: did Yudhishthira lose himself before he staked her? Dushasana drags her in by the hair. Before the elders she asks again; Bhishma says dharma is too subtle for him to answer, and only Vikarna declares the wager invalid. Karna mocks her, and Dushasana begins to pull away her garment — but each time it is pulled away, another just like it appears. At last, frightened by evil omens, Dhritarashtra intervenes and grants Draupadi boons. She uses them to free her husbands, and refuses a third.",
+      "why": "Draupadi’s question is legal, and deliberately so. If Yudhishthira had become a slave before staking her, he owned nothing — including the right to stake a wife. By asking it in public she forces the assembly either to answer or to show that might, not law, is ruling the hall.",
+      "dilemma": {
+        "title": "Was she lawfully lost?",
+        "body": "No one gives a clear answer, and that silence is the scene’s real subject. Bhishma admits he cannot decide; Drona and Kripa say nothing; Vidura protests in vain. The epic shows a hall full of the wisest men of the age failing the woman in front of them because the rules seemed to point both ways — and suggests that when law and conscience part, silence is itself a choice.\n\n(In the critical edition the garment simply keeps reappearing. Draupadi’s famous prayer to Krishna that summons the miracle belongs to later versions.)"
+      },
+      "characters": ["draupadi", "yudhishthira", "dushasana", "bhishma", "vikarna", "karna", "dhritarashtra", "bhima"],
+      "ref": "mbh_2_60_7"
+    },
+    {
+      "id": "exile",
+      "book": "mahabharata",
+      "order": 12,
+      "title": "Exile: the Second Game",
+      "where": "Sabha Parva",
+      "summary": "Dhritarashtra gives back everything the Pandavas lost. But Duryodhana persuades his father to allow one more game with a single stake: the losers will live twelve years in the forest and a thirteenth in disguise, and if they are discovered in that year, the exile begins again. Yudhishthira plays, and loses. The Pandavas and Draupadi leave for the forest, and the brothers swear the vows of vengeance they will keep in the war.",
+      "why": "Duryodhana knows the Pandavas will never forgive the insult to Draupadi; the boons have only made them dangerous again. Exile buys him thirteen years to win allies and secure the kingdom. Summoned by the king once more, Yudhishthira plays once more.",
+      "characters": ["yudhishthira", "duryodhana", "shakuni", "dhritarashtra", "bhima", "draupadi"],
+      "ref": "mbh_2_66_17"
+    },
+    {
+      "id": "draupadi-challenge",
+      "book": "mahabharata",
+      "order": 13,
+      "title": "Draupadi Questions Dharma",
+      "where": "Vana Parva",
+      "summary": "In the forest, Draupadi can no longer bear Yudhishthira’s calm. Why, she asks, does his anger not blaze when he sees his brothers in exile and his wife in rags? Forgiveness has its season, she argues, and this is not it — and then she goes further: if the good suffer and the wicked prosper, perhaps the Creator plays with people like wooden dolls. Yudhishthira answers that he follows dharma not for its rewards but because it is right, and that to doubt it is itself a fault. Bhima joins Draupadi in demanding war.",
+      "why": "The exile is the result of Yudhishthira’s own choices, and Draupadi, who suffered most for them, has every reason to ask whether his patience is wisdom or weakness. The debate is also one of the epic’s clearest discussions of why the righteous suffer, and whether virtue is its own reward.",
+      "dilemma": {
+        "title": "Why do the good suffer?",
+        "body": "Draupadi’s argument is the one every reader of the epic eventually makes: if dharma leads here, what is it worth? Yudhishthira’s reply — that virtue practised for a return is mere trade — is noble, but it does not quite answer her.\n\nThe Mahabharata gives both voices full force and lets the question hang over the rest of the exile."
+      },
+      "characters": ["draupadi", "yudhishthira", "bhima"],
+      "ref": "mbh_3_28_20"
+    },
+    {
+      "id": "karna-armour",
+      "book": "mahabharata",
+      "order": 14,
+      "title": "Karna Gives Away His Armour",
+      "where": "Vana Parva",
+      "summary": "Indra, Arjuna’s divine father, knows Karna cannot be killed while he wears the armour and earrings he was born with. In the last year of the Pandavas’ exile, Surya warns Karna in a dream that Indra will come for them disguised as a brahmin. He comes. Karna offers him lands, cattle, women, even a kingdom; the brahmin wants only the armour. Karna cuts it from his own body and gives it, asking in return only for Indra’s unfailing spear, which can be used once.",
+      "why": "Generosity is the core of how Karna sees himself: he will not be a man who refuses a request, even one he knows is a trap that will cost him his life. He would rather have the fame of the gift than the life. Indra, for his part, is protecting his son.",
+      "dilemma": {
+        "title": "Is a vow worth your life?",
+        "body": "Karna is told plainly that giving up the armour means death, and gives it anyway. The gods’ part in the bargain is less admirable: Indra turns Karna’s virtue into a weakness.\n\nThe episode makes Karna’s nobility and his doom the same thing."
+      },
+      "characters": ["karna", "arjuna"],
+      "ref": "mbh_3_294_1"
+    },
+    {
+      "id": "yaksha",
+      "book": "mahabharata",
+      "order": 15,
+      "title": "The Yaksha’s Questions",
+      "where": "Vana Parva",
+      "summary": "Thirsty in the forest, the Pandavas go one by one to a lake. A voice warns each to answer its questions before drinking; each ignores it, drinks, and falls dead. Yudhishthira comes last and agrees to answer. The Yaksha asks him question after question — what is swifter than the wind, what is the greatest wonder — and he answers them all. Offered the life of one brother, he chooses Nakula. The Yaksha reveals himself as Dharma, Yudhishthira’s divine father, and restores all four.",
+      "why": "The test is set by Dharma himself, and it is not of strength — the four warriors fail through haste and pride. It is of whether Yudhishthira understands what dharma actually is.",
+      "dilemma": {
+        "title": "Which brother should live?",
+        "body": "Asked to choose one brother, Yudhishthira passes over Bhima and Arjuna, the brothers he most needs to win back his kingdom. He chooses Nakula, Madri’s son: Kunti still has a son in him, and fairness to his father’s other wife means she should have one too. Refraining from cruelty, he says, is the highest dharma.\n\nIt is the answer that makes Dharma give him all four."
+      },
+      "characters": ["yudhishthira", "nakula", "bhima", "arjuna", "sahadeva"],
+      "ref": "mbh_3_296_11"
+    },
+    {
+      "id": "virata",
+      "book": "mahabharata",
+      "order": 16,
+      "title": "The Year in Disguise",
+      "where": "Virata Parva",
+      "summary": "For the thirteenth year the Pandavas must live undiscovered. They take service at the court of King Virata of Matsya: Yudhishthira as a dice-player and companion to the king, Bhima as a cook, Arjuna as Brihannala, a dance teacher living as a eunuch, the twins as keepers of horses and cattle, and Draupadi as the queen’s maid. When the queen’s brother Kichaka harasses Draupadi, Bhima kills him in secret. As the year ends and the Kauravas raid Virata’s cattle, Arjuna rides out and defeats them alone.",
+      "why": "The terms of the second dice game demand it: be recognised and the whole exile starts again. Each disguise is a kind of reversal — the king serving, the warrior dancing, the queen waiting on another.",
+      "characters": ["yudhishthira", "bhima", "arjuna", "draupadi", "nakula", "sahadeva"],
+      "outside": "Virata Parva"
+    },
+    {
+      "id": "arjuna-chooses",
+      "book": "mahabharata",
+      "order": 17,
+      "title": "Arjuna Chooses Krishna",
+      "where": "Udyoga Parva",
+      "summary": "With war coming, Arjuna and Duryodhana both travel to Dvaraka to ask Krishna for help, and arrive while he is asleep. Duryodhana sits down near his head; Arjuna stands at his feet. Waking, Krishna sees Arjuna first. He offers a choice: his vast army, or himself alone, who will not fight. Arjuna, as the younger, chooses first — and takes Krishna. Duryodhana leaves delighted with the army.",
+      "why": "To Duryodhana, power is counted in soldiers. To Arjuna, Krishna’s counsel and friendship are worth more than any number of troops — a judgment the war bears out.",
+      "characters": ["arjuna", "duryodhana", "krishna"],
+      "ref": "mbh_4_7_5"
+    },
+    {
+      "id": "peace-mission",
+      "book": "mahabharata",
+      "order": 18,
+      "title": "Krishna’s Mission of Peace",
+      "where": "Udyoga Parva",
+      "summary": "Krishna goes to Hastinapura as the Pandavas’ envoy with a last offer: give them their share of the kingdom — even just five villages — and there will be no war. Bhishma, Drona, Vidura, Gandhari and Dhritarashtra all urge Duryodhana to accept. He refuses: he will not give up even as much land as the point of a sharp needle can pierce. When he plots to seize Krishna, Krishna reveals his divine form to the assembly, and leaves.",
+      "why": "The Pandavas want the world to see they tried every road to peace; Krishna wants the Kauravas left with no excuse. Duryodhana has ruled for thirteen years and believes he can win. He sees any concession as weakness.",
+      "dilemma": {
+        "title": "When has peace truly run out?",
+        "body": "Before the mission the Pandavas argue among themselves: Yudhishthira wants peace almost at any price, Bhima surprises everyone by speaking for it, and Draupadi demands justice, holding up her unbound hair. Krishna’s embassy is meant to make the case for war unanswerable by exhausting every alternative.\n\nThe question it leaves is the one the Gita takes up: when has a just cause really run out of peaceful roads?"
+      },
+      "characters": ["krishna", "duryodhana", "dhritarashtra", "gandhari", "bhishma", "vidura", "drona", "yudhishthira", "draupadi"],
+      "ref": "mbh_4_125_25"
+    },
+    {
+      "id": "karna-truth",
+      "book": "mahabharata",
+      "order": 19,
+      "title": "Karna Learns Who He Is",
+      "where": "Udyoga Parva",
+      "summary": "Leaving Hastinapura, Krishna takes Karna up into his chariot and tells him the secret: he is Kunti’s first son, born before her marriage, and so by law the eldest of the Pandavas. If he comes over, he will be king; the Pandavas will serve him, and Draupadi will be his wife too. Karna answers that he already knows. He will not abandon Duryodhana, who gave him everything, or the charioteer’s family who raised him.",
+      "why": "Krishna’s offer is generous and strategic at once: with Karna on their side, the Pandavas cannot lose and the war might never happen. Karna’s refusal rests on gratitude and identity: whatever his birth, he is the son of Adhiratha and Radha, and Duryodhana’s friend.",
+      "dilemma": {
+        "title": "Blood or loyalty?",
+        "body": "Karna’s choice is perhaps the most argued-over in the epic. Offered justice, recognition and a crown, he turns them down for a friend he knows is in the wrong. Some see unshakeable loyalty; others, pride, or a kind of fatalism.\n\nKarna himself foresees the Kauravas’ defeat, and asks Krishna only to keep the secret — because if Yudhishthira learned it, he would refuse the kingdom."
+      },
+      "characters": ["karna", "krishna", "duryodhana", "kunti"],
+      "ref": "mbh_4_138_11"
+    },
+    {
+      "id": "kunti-plea",
+      "book": "mahabharata",
+      "order": 20,
+      "title": "Kunti’s Plea",
+      "where": "Udyoga Parva",
+      "summary": "Kunti goes alone to the bank of the Ganga where Karna is at his prayers and tells him she is his mother. She begs him to join his brothers. Karna answers that she abandoned him when it mattered, and comes now only for her other sons’ sake. He will not change sides. But he promises her that he will spare Yudhishthira, Bhima and the twins in battle and fight only Arjuna: either way, she will be left with five sons.",
+      "why": "With war days away, Kunti is trying to save all her children at once. Karna’s answer is a kind of justice: he gives her what she asks for her other sons, and nothing for herself.",
+      "dilemma": {
+        "title": "Can a mother claim a son she abandoned?",
+        "body": "Kunti has a mother’s love and no mother’s claim. Karna owes her nothing, and still gives her something.\n\nThe scene is quiet and almost unbearable: two people who understand each other perfectly, separated by a choice made decades before."
+      },
+      "characters": ["kunti", "karna", "arjuna"],
+      "ref": "mbh_4_142_27"
+    },
+    {
+      "id": "amba",
+      "book": "mahabharata",
+      "order": 21,
+      "title": "Amba’s Vengeance",
+      "where": "Udyoga Parva",
+      "summary": "Long before the war, Bhishma carried off the three princesses of Kashi — Amba, Ambika and Ambalika — as brides for his half-brother. Amba told him she had already chosen King Shalva, and Bhishma let her go. But Shalva rejected her as another man’s prize, and Bhishma, bound by his vow, would not marry her. Even his old teacher Parashurama, fighting him on her behalf, could not move him. Amba turned to austerities, won a promise that she would kill Bhishma in another life, and entered the fire. She was reborn as Drupada’s child, Shikhandi.",
+      "why": "Amba is crushed between three men’s rules: Bhishma’s right to win brides by force, Shalva’s pride, and Bhishma’s vow. With no one obliged to marry her and nowhere to go home to, vengeance becomes the only purpose she has left. Bhishma tells this story himself, to explain why he will never fight Shikhandi.",
+      "dilemma": {
+        "title": "Who wronged her?",
+        "body": "Bhishma meant no harm; Shalva acted by the custom of his day; Parashurama fought for her and could not win. Each man stayed within his rights, and between them they destroyed her.\n\nAmba’s story asks what justice looks like when no single person is to blame."
+      },
+      "characters": ["shikhandi", "bhishma"],
+      "ref": "mbh_4_170_9"
+    },
+    {
+      "id": "song-battlefield",
+      "book": "mahabharata",
+      "order": 22,
+      "title": "The Song on the Battlefield",
+      "where": "Bhishma Parva",
+      "summary": "On the first day of the war, as the two armies face each other at Kurukshetra, Arjuna’s courage fails and Krishna answers him. Their dialogue — eighteen chapters, some seven hundred verses — sits inside the Bhishma Parva, reported by Sanjaya to the blind Dhritarashtra. It is the Bhagavad Gita, which Katha also carries as a book of its own, with an explanation for every verse.",
+      "why": "The Gita’s setting is not decoration. It is spoken at the moment of greatest moral pressure in the epic — two families about to destroy each other — and its questions about duty, action and the self come straight out of that moment.",
+      "characters": ["arjuna", "krishna", "sanjaya", "dhritarashtra"],
+      "ref": "mbh_5_23_1"
+    },
+    {
+      "id": "bhishma-fall",
+      "book": "mahabharata",
+      "order": 23,
+      "title": "The Fall of Bhishma",
+      "where": "Bhishma Parva",
+      "summary": "For nine days Bhishma, commanding the Kauravas, is unstoppable. That night the Pandavas go to his tent and ask their grandfather how he can be defeated. He tells them: he will not fight Shikhandi, who was born a woman. On the tenth day Arjuna advances behind Shikhandi, and Bhishma, refusing to strike back, is pierced by so many arrows that when he falls his body does not touch the ground. Able to choose the hour of his death, he lies on his bed of arrows to wait for the sun’s turn north.",
+      "why": "Bhishma fights for Duryodhana out of duty, but his heart is with the Pandavas, and he will not let the war end in their destruction. Telling them how to defeat him is his way of reconciling the two.",
+      "dilemma": {
+        "title": "A fair way to win?",
+        "body": "The Pandavas win by using their grandfather’s own code against him — and he hands them the means. Is it honourable to turn an opponent’s principles into his weakness, if he consents?\n\nArjuna grieves as he shoots. The epic presents the fall as both tragic and necessary."
+      },
+      "characters": ["bhishma", "arjuna", "shikhandi", "yudhishthira", "krishna"],
+      "ref": "mbh_5_103_45"
+    },
+    {
+      "id": "abhimanyu-wheel",
+      "book": "mahabharata",
+      "order": 24,
+      "title": "Abhimanyu in the Wheel",
+      "where": "Drona Parva",
+      "summary": "On the thirteenth day, with Arjuna drawn away to another part of the field, Drona sets the army in the chakravyuha, a spiralling wheel formation. Only Abhimanyu, Arjuna’s young son, knows how to break in — not how to break out. He forces an entry; the Pandavas following him are held at the breach by Jayadratha. Inside, surrounded, Abhimanyu fights on alone until several great warriors attack him at once, cut his bow from behind, and kill him.",
+      "why": "Drona has promised Duryodhana to capture Yudhishthira and needs Arjuna out of the way. The formation is a trap that only Arjuna, Krishna and a few others know how to undo.",
+      "dilemma": {
+        "title": "When the rules of war collapse",
+        "body": "The war began with agreed rules: equals fight equals, one at a time, and no one strikes the defenceless. Abhimanyu’s death — many against one, his bow cut from behind — breaks them openly.\n\nAfter this, both sides abandon restraint, and the war turns steadily more savage."
+      },
+      "characters": ["abhimanyu", "arjuna", "drona", "karna", "duryodhana"],
+      "outside": "Drona Parva"
+    },
+    {
+      "id": "ashvatthama-lie",
+      "book": "mahabharata",
+      "order": 25,
+      "title": "“Ashvatthama Is Dead”",
+      "where": "Drona Parva",
+      "summary": "Drona is cutting down the Pandava army and cannot be stopped. Krishna proposes a lie: tell him his son Ashvatthama is dead. Bhima kills an elephant named Ashvatthama and announces it. Drona, doubting, turns to Yudhishthira, who has never lied. Yudhishthira says Ashvatthama is dead — and adds, indistinctly, that it was an elephant. Drona lays down his weapons and is killed by Dhrishtadyumna. Yudhishthira’s chariot, which had always run a little above the earth, now touches the ground.",
+      "why": "The Pandavas cannot defeat Drona in fair battle, and every day he lives their army bleeds. Krishna argues that a lie that saves lives is better than a truth that destroys them.",
+      "dilemma": {
+        "title": "Is a half-truth a lie?",
+        "body": "Yudhishthira says nothing false — an Ashvatthama did die — but he speaks to deceive. The man who would not lie tells the war’s most consequential lie, and the epic marks it in his chariot sinking to the earth.\n\nKrishna’s reasoning is about outcomes; Yudhishthira’s fall is about what the act costs the one who does it. The epic holds both to be true."
+      },
+      "characters": ["drona", "yudhishthira", "krishna", "bhima", "ashvatthama"],
+      "outside": "Drona Parva"
+    },
+    {
+      "id": "karna-wheel",
+      "book": "mahabharata",
+      "order": 26,
+      "title": "Karna’s Chariot Wheel",
+      "where": "Karna Parva",
+      "summary": "On the seventeenth day Karna and Arjuna finally meet. In the middle of their duel, Karna’s chariot wheel sinks into the earth — an old curse coming due. He climbs down to free it and calls on Arjuna to respect the rules of war and wait. Krishna answers by listing Karna’s own deeds — the dice hall, Draupadi, Abhimanyu — and urges Arjuna to shoot. Arjuna does, and Karna dies.",
+      "why": "Karna is the one warrior who can match Arjuna, and Krishna will not let the moment pass. His answer turns Karna’s appeal to fairness back on him.",
+      "dilemma": {
+        "title": "Can you claim the rules you broke?",
+        "body": "Karna’s appeal is fair in itself; he is defenceless. Krishna’s reply is that a man who mocked Draupadi and helped kill Abhimanyu cannot now call on dharma.\n\nReaders have long been divided. Some find the reply just; others see in Karna’s death the war’s saddest betrayal of the code it began with — all the more because Arjuna is killing his own eldest brother without knowing it."
+      },
+      "characters": ["karna", "arjuna", "krishna"],
+      "outside": "Karna Parva"
+    },
+    {
+      "id": "duryodhana-fall",
+      "book": "mahabharata",
+      "order": 27,
+      "title": "Duryodhana’s Fall",
+      "where": "Shalya Parva",
+      "summary": "With his army gone, Duryodhana hides in a lake. The Pandavas taunt him out, and Yudhishthira rashly offers him single combat against any one of them, with the kingdom as the prize. He chooses Bhima and the mace. Duryodhana is the more skilful fighter; Krishna hints to Arjuna, who slaps his own thigh, and Bhima remembers his vow. He strikes Duryodhana’s thighs — a foul blow below the waist — and breaks them. Balarama, who taught them both, is furious.",
+      "why": "Bhima had sworn in the dice hall to break the thigh Duryodhana bared to Draupadi. Krishna warns that in a fair fight Bhima may lose.",
+      "dilemma": {
+        "title": "A vow kept by a foul blow",
+        "body": "Bhima keeps his oath and ends the war; he also breaks the rule of mace combat in front of its master. Dying, Duryodhana accuses Krishna of winning every great duel by trickery — and flowers fall from the sky on the fallen king.\n\nThe epic lets its defeated villain have a hero’s last word."
+      },
+      "characters": ["duryodhana", "bhima", "krishna", "arjuna", "yudhishthira"],
+      "outside": "Shalya Parva"
+    },
+    {
+      "id": "night-raid",
+      "book": "mahabharata",
+      "order": 28,
+      "title": "The Night Raid",
+      "where": "Sauptika Parva",
+      "summary": "Grief-stricken by his father’s death and Duryodhana’s defeat, Ashvatthama watches an owl kill sleeping crows and takes it as a sign. With Kripa and Kritavarma he enters the Pandava camp at night and slaughters the sleeping warriors: Dhrishtadyumna, Shikhandi, Draupadi’s five sons and many more. The Pandavas, away from the camp with Krishna, survive. Hunted down, Ashvatthama unleashes a terrible weapon; Krishna curses him to wander the earth for three thousand years.",
+      "why": "To Ashvatthama, the Pandavas won through lies and foul blows, and he feels released from every rule in return. The raid is the war’s logic followed to its end.",
+      "dilemma": {
+        "title": "Revenge without limit",
+        "body": "Kripa tries to talk him out of it — killing sleeping men is a grave sin. Ashvatthama answers that the Pandavas broke every rule first.\n\nThe raid shows what the war has made of everyone: by the end, the side of dharma has won, and almost no one is left to rule over."
+      },
+      "characters": ["ashvatthama", "draupadi", "krishna", "shikhandi"],
+      "outside": "Sauptika Parva"
+    },
+    {
+      "id": "shanti",
+      "book": "mahabharata",
+      "order": 29,
+      "title": "Yudhishthira’s Grief, Bhishma’s Teaching",
+      "where": "Shanti Parva",
+      "summary": "The war is won, and Yudhishthira cannot bear it. Learning that Karna was his elder brother, he is overwhelmed by what victory cost, and wants to leave the throne for the life of a forest ascetic. His brothers, Draupadi and the sages argue with him for days. At last he goes to Bhishma, lying on his bed of arrows, who teaches him the duties of kings, how to act in times of crisis, and the paths to liberation — the vast teaching of the Shanti Parva.",
+      "why": "Yudhishthira is the mirror of Arjuna at the war’s start: Arjuna doubted before acting, Yudhishthira after. Ruling well is now his duty, and Bhishma, whose own life was spent serving a throne, is the one who can show him how.",
+      "dilemma": {
+        "title": "Can you rule after something so terrible?",
+        "body": "Yudhishthira argues that a kingdom won by killing one’s kin is poisoned. His family answers that abandoning it now would make all that suffering pointless, and leave the people unprotected.\n\nThe Shanti Parva is the epic’s long reply: a king’s duty does not depend on his feeling worthy of it."
+      },
+      "characters": ["yudhishthira", "bhishma", "krishna", "draupadi", "arjuna"],
+      "ref": "mbh_6_1_15"
+    },
+    {
+      "id": "krauncha",
+      "book": "ramayana",
+      "order": 1,
+      "title": "The Grief That Became Verse",
+      "where": "Bala Kanda",
+      "summary": "By the river Tamasa, the sage Valmiki watches a pair of krauncha birds together, until a hunter shoots the male. As the female cries over him, Valmiki curses the hunter — and realises his words came out in perfect metre, a shloka. The god Brahma appears and tells him to use this new verse to tell the story of Rama.",
+      "why": "The Ramayana explains its own beginning: poetry is born from compassion for suffering — shoka, grief, becomes shloka, verse. It is why Valmiki is called the first poet, and why the epic dwells so tenderly on the pain of separated lovers.",
+      "characters": ["valmiki"],
+      "ref": "ramayana_1_2_12"
+    },
+    {
+      "id": "tataka",
+      "book": "ramayana",
+      "order": 2,
+      "title": "Rama Kills Tataka",
+      "where": "Bala Kanda",
+      "summary": "Vishvamitra leads the young Rama and Lakshmana into a forest laid waste by Tataka, a yakshi cursed into a man-eating demoness. Rama hesitates: she is a woman. Vishvamitra tells him not to shrink from it — a prince’s duty to protect the people outweighs that scruple — and Rama kills her.",
+      "why": "Vishvamitra has brought Rama to guard his sacrifice from rakshasas, and Tataka has made the region uninhabitable. It is Rama’s first test as a warrior, and his first lesson in a prince’s duty.",
+      "dilemma": {
+        "title": "May a hero kill a woman?",
+        "body": "Rama’s hesitation is real — the warrior code forbade killing women. Vishvamitra’s answer is that protecting the innocent comes before rules about whom one may fight.\n\nIt is an early sign of how often the Ramayana will set one principle against another and ask its hero to choose."
+      },
+      "characters": ["rama", "vishvamitra", "lakshmana"],
+      "ref": "ramayana_1_24_15"
+    },
+    {
+      "id": "shiva-bow",
+      "book": "ramayana",
+      "order": 3,
+      "title": "Breaking Shiva’s Bow",
+      "where": "Bala Kanda",
+      "summary": "At Mithila, King Janaka shows the princes an immense bow that once belonged to Shiva, which no king has been able even to string. Whoever bends it will marry his daughter Sita. Rama lifts it easily and draws it so far that it breaks in two with a sound like thunder. Janaka gives Sita to Rama, and Rama’s brothers marry her sister and cousins.",
+      "why": "Janaka set the bow as a test because Sita, found in the earth, was no ordinary bride. The scene marks Rama as a hero beyond ordinary kings, and joins the houses of Ayodhya and Mithila.",
+      "characters": ["rama", "sita", "vishvamitra", "lakshmana"],
+      "ref": "ramayana_1_66_12"
+    },
+    {
+      "id": "kaikeyi-boons",
+      "book": "ramayana",
+      "order": 4,
+      "title": "Kaikeyi’s Two Boons",
+      "where": "Ayodhya Kanda",
+      "summary": "As Ayodhya prepares to crown Rama heir, Kaikeyi’s maid Manthara convinces her mistress that Rama’s rise will leave her and Bharata powerless, and reminds her of the two boons Dasharatha promised her after she saved his life in battle. Kaikeyi claims them: Bharata to be crowned, and Rama exiled to the forest for fourteen years. Dasharatha pleads and collapses, but cannot break his word.",
+      "why": "The palace runs on promises. Kaikeyi’s boons were real, given freely in gratitude; Manthara turns them into a weapon. Dasharatha’s word is the foundation of his authority — if the king’s promise can be broken, so can every oath in the kingdom.",
+      "dilemma": {
+        "title": "Must an unjust promise be kept?",
+        "body": "Everyone, including Dasharatha, knows the demand is unjust. But for the king to break his word would be its own injustice, undermining truth itself, which the Ramayana treats as the ground the world stands on.\n\nDasharatha keeps the promise, and it kills him. The epic sides with keeping one’s word while showing, without flinching, how much it costs."
+      },
+      "characters": ["kaikeyi", "manthara", "dasharatha", "rama", "bharata"],
+      "ref": "ramayana_2_7_2"
+    },
+    {
+      "id": "rama-exile",
+      "book": "ramayana",
+      "order": 5,
+      "title": "Rama Accepts Exile",
+      "where": "Ayodhya Kanda",
+      "summary": "Summoned to his father, Rama finds him speechless with grief; it is Kaikeyi who tells him the terms. Rama agrees at once, without anger. Kausalya begs him to stay; Lakshmana rages and urges him to take the throne by force. Rama refuses: his father’s word must be made true. Sita insists on going with him, and Lakshmana will not be left behind. The three leave Ayodhya dressed as forest ascetics.",
+      "why": "For Rama, a son’s obedience and the truth of his father’s promise matter more than his own claim. He refuses even to blame Kaikeyi, saying that fate, not she, is the cause.",
+      "dilemma": {
+        "title": "Obey, or set things right?",
+        "body": "Lakshmana’s argument is not foolish: the order is unjust, the king is helpless, and Rama has the people behind him. Rama chooses to submit — to keep his family’s word whole rather than win his rights by force.\n\nThe choice defines him for the rest of the poem."
+      },
+      "characters": ["rama", "sita", "lakshmana", "kausalya", "kaikeyi", "dasharatha"],
+      "ref": "ramayana_2_16_1"
+    },
+    {
+      "id": "dasharatha-death",
+      "book": "ramayana",
+      "order": 6,
+      "title": "Dasharatha’s Death and the Old Curse",
+      "where": "Ayodhya Kanda",
+      "summary": "A few nights after Rama leaves, Dasharatha tells Kausalya a story from his youth. Hunting by the Sarayu in the dark, he heard what sounded like an elephant drinking and loosed an arrow at the sound. He had killed a young ascetic filling a water pot for his blind, aged parents. The boy’s father cursed him to die, as they would, grieving for a son. Now the curse has come true. That night Dasharatha dies.",
+      "why": "The Ramayana ties Dasharatha’s death to his own past act: karma, not Kaikeyi alone, lies behind his suffering. (The boy is unnamed in Valmiki; the familiar name Shravana Kumar comes from later tellings.)",
+      "characters": ["dasharatha", "kausalya"],
+      "ref": "ramayana_2_57_14"
+    },
+    {
+      "id": "bharata-sandals",
+      "book": "ramayana",
+      "order": 7,
+      "title": "Bharata Refuses the Throne",
+      "where": "Ayodhya Kanda",
+      "summary": "Bharata comes home to find his father dead and Rama exiled in his name. He denounces his mother, refuses the throne, and leads a great company into the forest to bring Rama back. At Chitrakuta the brothers argue: Bharata begs, the sages plead, but Rama will not return before the fourteen years are over. Bharata takes Rama’s golden sandals, sets them on the throne, and rules from the village of Nandigrama as Rama’s regent, living as an ascetic until his brother comes home.",
+      "why": "Bharata knows that taking the crown would make him complicit in his mother’s scheme and a usurper of his brother’s right. Rama, in turn, will not let his father’s promise be undone. The sandals are their compromise: the kingdom is ruled, but in Rama’s name.",
+      "dilemma": {
+        "title": "What do you do with what you shouldn’t have?",
+        "body": "Bharata is handed a kingdom he did nothing to win. He gives it back.\n\nSet beside the Mahabharata’s cousins who fight to the death over a throne, Bharata’s refusal is the Ramayana’s picture of what brothers can be."
+      },
+      "characters": ["bharata", "rama", "kaikeyi", "shatrughna", "kausalya"],
+      "ref": "ramayana_2_93_29"
+    },
+    {
+      "id": "shurpanakha",
+      "book": "ramayana",
+      "order": 8,
+      "title": "Shurpanakha",
+      "where": "Aranya Kanda",
+      "summary": "In the Panchavati forest, Ravana’s sister Shurpanakha sees Rama and asks him to marry her, offering to devour Sita. Rama teasingly sends her to Lakshmana, who sends her back. Mocked, she lunges at Sita, and at Rama’s word Lakshmana cuts off her nose and ears. She flees to her brother Khara, whose army Rama destroys, and then to Ravana.",
+      "why": "Shurpanakha is driven by desire and then humiliation; her wound becomes Ravana’s reason — or pretext — for what follows. It is also she who describes Sita’s beauty to Ravana, planting the desire that leads to the abduction.",
+      "dilemma": {
+        "title": "Was the punishment just?",
+        "body": "Shurpanakha did threaten Sita, and rakshasas were preying on the forest’s hermits. But the brothers’ mockery and the cruelty of the mutilation trouble many readers, and the consequences fall far beyond those responsible.\n\nIt is one of several places where the Ramayana lets its heroes look less than ideal."
+      },
+      "characters": ["shurpanakha", "rama", "lakshmana", "sita", "ravana"],
+      "ref": "ramayana_3_16_17"
+    },
+    {
+      "id": "golden-deer",
+      "book": "ramayana",
+      "order": 9,
+      "title": "The Golden Deer",
+      "where": "Aranya Kanda",
+      "summary": "Ravana forces the rakshasa Maricha to take the form of a golden deer and graze near the hermitage. Sita longs for it; Lakshmana warns that it is a demon’s trick, but Rama goes after it, telling Lakshmana to guard her. Struck by Rama’s arrow, Maricha cries out in Rama’s voice for Sita and Lakshmana. Sita, terrified, orders Lakshmana to go. When he refuses, she accuses him of wanting Rama dead so that he can have her. Lakshmana leaves.",
+      "why": "The plan works because it turns each person’s virtue against them: Sita’s delight, Rama’s wish to please her, Lakshmana’s obedience, Sita’s love and fear. (The line Lakshmana draws around the hut, famous from later retellings, is not in Valmiki.)",
+      "dilemma": {
+        "title": "Leave her, or stay?",
+        "body": "Lakshmana is right — the cry is a trick, and he says so. But his orders were to guard Sita, and Sita, desperate, gives him new orders and says unforgivable things. He obeys her and loses everything.\n\nThe scene is a study of how good intentions, skilfully manipulated, produce the worst result."
+      },
+      "characters": ["sita", "rama", "lakshmana", "maricha", "ravana"],
+      "ref": "ramayana_3_40_12"
+    },
+    {
+      "id": "abduction",
+      "book": "ramayana",
+      "order": 10,
+      "title": "The Abduction of Sita",
+      "where": "Aranya Kanda",
+      "summary": "Ravana, disguised as a wandering ascetic, comes to the empty hermitage and is welcomed by Sita. He reveals himself and asks her to be his queen; when she scorns him, he seizes her and carries her off in his flying chariot. The aged vulture Jatayu attacks him and smashes the chariot, but Ravana cuts off his wings. Over the mountains, Sita drops her jewels to a group of monkeys below.",
+      "why": "Ravana acts out of desire stirred by Shurpanakha and out of wounded pride: his sister has been mutilated and Khara’s army destroyed. Taking Sita is at once revenge on Rama and a prize.",
+      "characters": ["ravana", "sita", "jatayu"],
+      "ref": "ramayana_3_47_11"
+    },
+    {
+      "id": "shabari",
+      "book": "ramayana",
+      "order": 11,
+      "title": "Shabari’s Welcome",
+      "where": "Aranya Kanda",
+      "summary": "Searching for Sita, Rama and Lakshmana reach the hermitage of Shabari by Lake Pampa, an old woman ascetic who has waited there for years since her teachers departed. She welcomes them, offers them fruits she has gathered, and shows them the hermitage. Then, her waiting fulfilled, she enters the fire and rises to join her teachers.",
+      "why": "Shabari has waited on her teachers’ word that Rama would come; his arrival completes her life of devotion. For the grieving brothers, her hermitage is a moment of rest before they find Sugriva. (Her tasting each berry first comes from later devotional retellings, not Valmiki.)",
+      "characters": ["shabari", "rama", "lakshmana"],
+      "ref": "ramayana_3_70_4"
+    },
+    {
+      "id": "vali-death",
+      "book": "ramayana",
+      "order": 12,
+      "title": "The Killing of Vali",
+      "where": "Kishkindha Kanda",
+      "summary": "Rama has promised Sugriva to kill his brother Vali, the king who drove him out and took his wife. Sugriva challenges Vali to a duel, and while they fight, Rama shoots Vali from behind a tree. Dying, Vali reproaches Rama: he had no quarrel with Rama, was fighting someone else, and was struck from hiding — is this a prince’s dharma? Rama answers him at length, and Vali accepts the answer, asking Rama to protect his son Angada.",
+      "why": "Rama needs Sugriva’s armies to find Sita, and Sugriva needs Vali gone. Rama also judges Vali guilty: he took his younger brother’s wife, a crime Rama says deserves death, and the land belongs to the Ikshvakus, whose king Bharata Rama represents.",
+      "dilemma": {
+        "title": "Was it right to strike from hiding?",
+        "body": "Vali’s objection is the hardest question anyone puts to Rama in the whole poem, and Valmiki gives it full force. Rama’s answers — a king’s right to punish crime, the way animals are hunted, his duty as Bharata’s agent — satisfy Vali.\n\nCommentators have debated them for centuries, and many readers remain uneasy."
+      },
+      "characters": ["vali", "rama", "sugriva", "angada"],
+      "ref": "ramayana_4_16_25"
+    },
+    {
+      "id": "hanuman-leap",
+      "book": "ramayana",
+      "order": 13,
+      "title": "Hanuman’s Leap",
+      "where": "Sundara Kanda",
+      "summary": "The search party sent south reaches the ocean and despairs: Sita is somewhere across it, a hundred leagues away. The vulture Sampati, Jatayu’s brother, tells them she is in Lanka. No one dares the jump until old Jambavan recounts Hanuman’s birth and strength to him. Hanuman grows to an enormous size on Mount Mahendra, and leaps.",
+      "why": "Sugriva’s deadline for finding Sita has passed, and the monkeys fear what he will do. The leap is Hanuman’s moment: the devoted servant becomes the hero of the Sundara Kanda.",
+      "characters": ["hanuman", "jambavan", "angada"],
+      "ref": "ramayana_5_1_7"
+    },
+    {
+      "id": "ashoka-grove",
+      "book": "ramayana",
+      "order": 14,
+      "title": "Hanuman Finds Sita",
+      "where": "Sundara Kanda",
+      "summary": "Searching Lanka by night, Hanuman finds Sita in the Ashoka grove, thin and grieving, guarded by rakshasis. He watches Ravana come to court and threaten her, giving her two months to yield. When the guards sleep, Hanuman quietly tells Rama’s story, convinces Sita he is no trick, and gives her Rama’s ring. He offers to carry her home on his back; she refuses, saying Rama must rescue her himself, and gives him a jewel from her hair as a token.",
+      "why": "Sita’s refusal is about honour — Rama’s and her own. She will not willingly touch another man, and Rama must defeat Ravana himself for her rescue to mean what it should.",
+      "characters": ["hanuman", "sita", "ravana"],
+      "ref": "ramayana_5_32_2"
+    },
+    {
+      "id": "lanka-burns",
+      "book": "ramayana",
+      "order": 15,
+      "title": "Lanka Burns",
+      "where": "Sundara Kanda",
+      "summary": "Before leaving, Hanuman wrecks the Ashoka grove and kills the rakshasas sent against him, until Indrajit binds him with a weapon of Brahma and brings him before Ravana. Hanuman warns Ravana to return Sita. Ravana orders him killed; Vibhishana objects that an envoy may not be killed, so instead they set his tail on fire. Hanuman breaks free and sets the city ablaze, rooftop by rooftop — then fears for Sita, and is relieved to find her unharmed.",
+      "why": "Hanuman wants to measure Ravana’s strength and deliver a warning. Vibhishana’s defence of the envoy is the first sign of his break with his brother.",
+      "characters": ["hanuman", "ravana", "indrajit", "vibhishana"],
+      "ref": "ramayana_5_51_9"
+    },
+    {
+      "id": "vibhishana-refuge",
+      "book": "ramayana",
+      "order": 16,
+      "title": "Vibhishana Seeks Refuge",
+      "where": "Yuddha Kanda",
+      "summary": "In Ravana’s council, Vibhishana urges him to return Sita. Ravana calls him a traitor. Vibhishana crosses the sea to Rama’s camp and asks for refuge. Sugriva and others suspect a spy. Rama answers that he will not turn away anyone who comes to him for shelter — whether it is Vibhishana or Ravana himself — and accepts him.",
+      "why": "Vibhishana believes Ravana is leading Lanka to ruin and has failed to stop him. Rama’s acceptance rests on a principle he states plainly: protecting one who asks for refuge outweighs the risk.",
+      "dilemma": {
+        "title": "Traitor, or the one who chose right?",
+        "body": "To Rama, Vibhishana is a refugee and an ally of dharma. To Lanka, he is the brother who left. The Ramayana honours him, yet a Hindi proverb — ghar ka bhedi Lanka dhaye, ‘the insider brings down Lanka’ — remembers him otherwise.\n\nHis story sits beside Kumbhakarna’s, the brother who stayed."
+      },
+      "characters": ["vibhishana", "rama", "sugriva", "ravana"],
+      "ref": "ramayana_6_11_8"
+    },
+    {
+      "id": "bridge",
+      "book": "ramayana",
+      "order": 17,
+      "title": "The Bridge to Lanka",
+      "where": "Yuddha Kanda",
+      "summary": "Rama asks the Ocean to let his army pass, and waits. When nothing happens, he takes up his bow in anger, and the Ocean rises to answer: it cannot change its own nature, but the monkey Nala, son of the divine architect Vishvakarma, can build a bridge, and the waters will hold it. The monkeys fill the sea with trees and rocks, and the bridge is finished in five days.",
+      "why": "The ocean is the last barrier between Rama and Sita. The episode mixes patience and force: Rama first asks, then threatens, and the way across comes from many hands working together.",
+      "characters": ["rama", "sugriva"],
+      "ref": "ramayana_6_15_9"
+    },
+    {
+      "id": "kumbhakarna",
+      "book": "ramayana",
+      "order": 18,
+      "title": "Kumbhakarna Wakes",
+      "where": "Yuddha Kanda",
+      "summary": "With the war going badly, Ravana has his giant brother Kumbhakarna woken from his months-long sleep. Kumbhakarna listens, then tells Ravana bluntly that he acted rashly, without counsel, and has brought this on himself. Then he goes out to fight. He tramples and devours monkeys by the hundred, carries off Sugriva, and is finally cut down by Rama’s arrows.",
+      "why": "Kumbhakarna owes Ravana a brother’s loyalty and a subject’s duty to his king. His criticism is honest; so is his decision to fight anyway.",
+      "dilemma": {
+        "title": "Right, or my brother?",
+        "body": "Kumbhakarna and Vibhishana both believe Ravana is wrong. One leaves; one stays and dies for him.\n\nThe Ramayana gives each his dignity and does not settle which loyalty is higher."
+      },
+      "characters": ["kumbhakarna", "ravana", "rama", "sugriva", "vibhishana"],
+      "ref": "ramayana_6_51_4"
+    },
+    {
+      "id": "herbs",
+      "book": "ramayana",
+      "order": 19,
+      "title": "The Mountain of Herbs",
+      "where": "Yuddha Kanda",
+      "summary": "Indrajit’s weapon of Brahma leaves Rama, Lakshmana and much of the army struck down. Vibhishana and Hanuman find Jambavan, barely alive, who sends Hanuman to the Himalayas for four healing herbs. Unable to pick them out, Hanuman tears off the whole peak and carries it to Lanka; the herbs’ fragrance alone revives the fallen. Later, when Ravana strikes Lakshmana down with a spear, the physician Sushena sends Hanuman for the herbs once more.",
+      "why": "With the army’s leaders felled by a weapon no one can resist, only something beyond ordinary strength can save them. It is the purest image of Hanuman’s devotion: no task too large.",
+      "characters": ["hanuman", "jambavan", "lakshmana", "rama", "indrajit", "vibhishana"],
+      "ref": "ramayana_6_61_13"
+    },
+    {
+      "id": "ravana-fall",
+      "book": "ramayana",
+      "order": 20,
+      "title": "The Fall of Ravana",
+      "where": "Yuddha Kanda",
+      "summary": "After days of battle in which Ravana loses brothers and sons, he faces Rama himself. Indra sends Rama his own chariot and charioteer, Matali. Each time Rama cuts off one of Ravana’s heads, another grows in its place. At last, on Matali’s advice, Rama looses the weapon given by Brahma, and it strikes Ravana in the heart. Rama then tells Vibhishana to perform his brother’s funeral rites: with death, he says, their enmity is over.",
+      "why": "Ravana’s boon guarded him against gods and demons, not men — and Rama is a man. His instruction to honour Ravana in death closes the war with restraint.",
+      "characters": ["ravana", "rama", "vibhishana", "mandodari"],
+      "ref": "ramayana_6_97_3"
+    },
+    {
+      "id": "fire-ordeal",
+      "book": "ramayana",
+      "order": 21,
+      "title": "Sita’s Ordeal by Fire",
+      "where": "Yuddha Kanda",
+      "summary": "After the victory, Sita is brought before Rama — and he speaks to her coldly. He says he fought to restore his honour and his family’s, and that he cannot take back a woman who has lived in another man’s house; she may go where she likes. Sita, stunned, answers with dignity, asks why he did not send her this message through Hanuman and spare her the hope, then asks Lakshmana to build a pyre and walks into the fire. Agni, the fire god, rises carrying her unharmed and declares her pure, and Rama receives her, saying he never doubted her but the world had to see.",
+      "why": "Rama’s stated reason is public: a king’s wife must be beyond suspicion. His later claim that he always knew she was pure, and staged the test for others, has satisfied some readers and not others.",
+      "dilemma": {
+        "title": "Whose honour is at stake?",
+        "body": "Sita has done nothing wrong; the test exists only because of what others might think. The scene remains one of the most painful in Indian literature.\n\nHow to read it — as Rama’s duty as king, or as his failure as husband — is still debated, and many retellings soften it or change it entirely."
+      },
+      "characters": ["sita", "rama", "lakshmana"],
+      "ref": "ramayana_6_103_1"
+    },
+    {
+      "id": "sita-exile",
+      "book": "ramayana",
+      "order": 22,
+      "title": "Sita Is Sent Away",
+      "where": "Uttara Kanda",
+      "summary": "Years into his reign, Rama asks a companion what the people say. Among the praise there is gossip: the king took back a wife who lived in Ravana’s house, and soon every husband will have to bear the same from his own. Rama, though he knows Sita is innocent, orders Lakshmana to take her — pregnant — to the forest near Valmiki’s hermitage and leave her there. Lakshmana obeys in tears. Valmiki shelters her, and she gives birth to twins, Lava and Kusha.",
+      "why": "Rama believes a king who ignores his people’s doubts loses their trust, and with it his right to rule. The Uttara Kanda presents the decision as an agonising sacrifice of his own happiness.",
+      "dilemma": {
+        "title": "The king or the husband?",
+        "body": "This is the Ramayana’s most argued-over choice. Defenders see a ruler who belongs wholly to his people; critics see an innocent woman sacrificed to rumour.\n\nMany scholars consider the Uttara Kanda a later addition to Valmiki’s poem, and some later retellings leave this episode out altogether."
+      },
+      "characters": ["rama", "sita", "lakshmana", "valmiki", "lava-kusha"],
+      "ref": "ramayana_7_42_5"
+    },
+    {
+      "id": "shambuka",
+      "book": "ramayana",
+      "order": 23,
+      "title": "Shambuka",
+      "where": "Uttara Kanda",
+      "summary": "A brahmin brings the body of his young son to Rama’s gate, saying that a child dying before his father is a sign of some fault in the king’s rule. The sage Narada explains that someone is practising austerities outside their station — a shudra, which the order of that age forbade. Rama searches the land, finds Shambuka performing penance, and, learning that he is a shudra, kills him. The brahmin’s son returns to life.",
+      "why": "The episode reflects the belief that a king answers for everything in his realm, and that disorder in the social order brings misfortune. Within the story, Rama acts to restore that order.",
+      "dilemma": {
+        "title": "Justice for whom?",
+        "body": "To modern readers this is the hardest episode in the Ramayana: a man killed for seeking spiritual practice because of his birth. It has been central to critiques of caste, and many retellings — including Bhavabhuti’s play and a number of modern versions — rework or reject it.\n\nLike Sita’s exile, it belongs to the Uttara Kanda, whose place in Valmiki’s original poem is disputed."
+      },
+      "characters": ["rama"],
+      "ref": "ramayana_7_64_2"
+    },
+    {
+      "id": "sita-earth",
+      "book": "ramayana",
+      "order": 24,
+      "title": "Sita Returns to the Earth",
+      "where": "Uttara Kanda",
+      "summary": "At Rama’s great horse sacrifice, two young singers perform the Ramayana: Lava and Kusha, Sita’s sons. Rama recognises them and sends for Sita, asking her to swear her purity before the assembly. Valmiki brings her and vouches for her. Sita, in plain words, calls on the Earth: if she has never thought of anyone but Rama, let the goddess Earth receive her. A throne rises from the ground, the Earth takes Sita in her arms, and they sink away.",
+      "why": "Rama wants the public proof that would let him take her back. Sita, having proved herself once already, will not live that life again.",
+      "dilemma": {
+        "title": "How many times must she prove it?",
+        "body": "Rama’s request is meant to end the rumour. Sita answers it in a way that ends the marriage.\n\nHer final act can be read as triumph, as grief, or as protest — the only verdict left in her own hands."
+      },
+      "characters": ["sita", "rama", "lava-kusha", "valmiki"],
+      "ref": "ramayana_7_88_4"
+    },
+    {
+      "id": "lakshmana-banished",
+      "book": "ramayana",
+      "order": 25,
+      "title": "Rama Banishes Lakshmana",
+      "where": "Uttara Kanda",
+      "summary": "Time itself, in the form of an ascetic, comes to speak privately with Rama, who orders that anyone who interrupts them must die. Lakshmana guards the door. The quick-tempered sage Durvasa arrives and threatens to curse Rama’s whole line unless he is admitted at once. Lakshmana chooses to sacrifice himself and goes in. Bound by his word, Rama banishes him rather than kill him, and Lakshmana walks to the river Sarayu and gives up his life. Soon after, Rama follows.",
+      "why": "Time has come to tell Rama that his life on earth is complete. Durvasa’s threat forces Lakshmana to choose between the order and the family; he chooses the family — and Rama, once again, keeps his word.",
+      "dilemma": {
+        "title": "A word that costs a brother",
+        "body": "The Ramayana ends as it began, with a promise that must be kept at terrible cost. Rama could not break his father’s word; now he cannot break his own.\n\nThe brothers who left Ayodhya together at the start are parted by it at the end."
+      },
+      "characters": ["lakshmana", "rama"],
+      "ref": "ramayana_7_93_1"
+    }
+  ]
+}

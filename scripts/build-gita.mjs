@@ -18,7 +18,7 @@ const dataDir = join(__dirname, '..', 'assets', 'data');
 const cacheDir = join(__dirname, '_besant_cache');
 if (!existsSync(cacheDir)) mkdirSync(cacheDir, { recursive: true });
 const WRITE = process.argv.includes('--write');
-const UA = 'DharmaReader-build/1.0 (personal scripture app; verse text fill)';
+const UA = 'Katha-build/1.0 (personal scripture app; verse text fill)';
 
 const GITA = JSON.parse(readFileSync(join(dataDir, 'gita.json'), 'utf8'));
 const CHAPTERS = GITA.chapters;

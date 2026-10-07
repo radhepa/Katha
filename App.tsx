@@ -51,7 +51,7 @@ export default function App() {
     return (
       <View style={{ flex: 1, padding: 32, justifyContent: 'center', backgroundColor: '#FAF8F4' }}>
         <Text style={{ fontSize: 16, color: '#1C1814', marginBottom: 8 }}>
-          Dharma Reader failed to start.
+          Katha failed to start.
         </Text>
         <Text style={{ fontSize: 13, color: '#6B5E52' }}>
           {bootError.message}

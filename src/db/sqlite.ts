@@ -56,6 +56,8 @@ let db: SQLite.SQLiteDatabase | null = null;
 
 export async function initDb(): Promise<SQLite.SQLiteDatabase> {
   if (db) return db;
+  // The file keeps its pre-rename name: changing it would orphan every
+  // existing reader's progress, bookmarks and streak history.
   db = await SQLite.openDatabaseAsync('dharma.db');
   await db.execAsync(SCHEMA);
   return db;

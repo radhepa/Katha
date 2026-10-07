@@ -1,10 +1,11 @@
 {
-  "name": "dharma-reader",
+  "name": "katha",
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
     "@expo-google-fonts/dm-sans": "^0.4.2",
     "@expo-google-fonts/lora": "^0.4.2",
+    "@expo-google-fonts/noto-serif": "^0.4.2",
     "@expo-google-fonts/noto-serif-devanagari": "^0.4.1",
     "@expo-google-fonts/noto-serif-gujarati": "^0.4.2",
     "@expo-google-fonts/noto-serif-tamil": "^0.4.1",

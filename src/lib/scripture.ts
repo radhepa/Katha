@@ -6,7 +6,10 @@
 import type {
   BookFile,
   BookId,
+  BookIndexFile,
+  BookMeta,
   ChapterIndex,
+  DailyFile,
   GitaVerse,
   MahabharataVerse,
   RamayanaVerse,
@@ -40,12 +43,47 @@ export function getBook(bookId: BookId): BookFile {
   return loadBook(bookId);
 }
 
+// Titles, chapter lists and daily verses come from two small generated files
+// (scripts/build-index.mjs) so Home and Library never parse a full book.
+let indexCache: BookIndexFile | null = null;
+function loadIndex(): BookIndexFile {
+  if (!indexCache) indexCache = require('../../assets/data/index.json') as BookIndexFile;
+  return indexCache;
+}
+
+let dailyCache: DailyFile | null = null;
+function loadDaily(): DailyFile {
+  if (!dailyCache) dailyCache = require('../../assets/data/daily.json') as DailyFile;
+  return dailyCache;
+}
+
+export function getBookMeta(bookId: BookId): BookMeta {
+  return loadIndex().books[bookId].meta;
+}
+
 export function getChapters(bookId: BookId): ChapterIndex[] {
-  return loadBook(bookId).chapters;
+  return loadIndex().books[bookId].chapters;
 }
 
 export function getChapter(bookId: BookId, chapterNumber: number): ChapterIndex | null {
-  return loadBook(bookId).chapters.find((c) => c.number === chapterNumber) ?? null;
+  return getChapters(bookId).find((c) => c.number === chapterNumber) ?? null;
+}
+
+// Top-level unit a verse belongs to: Gita chapter, Ramayana kanda, Mahabharata parva.
+export function topLevelChapterOf(verse: Verse): number {
+  switch (verse.book) {
+    case 'gita':
+      return verse.chapter;
+    case 'ramayana':
+      return verse.kanda;
+    case 'mahabharata':
+      return verse.parva;
+  }
+}
+
+// Sub-unit a verse belongs to: Ramayana sarga, Mahabharata adhyaya; the Gita has none.
+export function subUnitOf(verse: Verse): number | undefined {
+  return verse.book === 'ramayana' ? verse.sarga : verse.book === 'mahabharata' ? verse.chapter : undefined;
 }
 
 // Returns verses for a given top-level chapter/kanda/parva.
@@ -75,13 +113,11 @@ export function getVerseById(verseId: string): Verse | null {
 
 // Daily quote selection per DATA.md §6 — deterministic, date-based.
 // All users see the same verse for the same calendar day.
-export function getDailyVerseId(bookId: BookId, date: Date = new Date()): string | null {
-  const book = loadBook(bookId);
-  const pool = book.verses.filter((v) => v.daily_quote_eligible).map((v) => v.id);
+export function getDailyVerse(bookId: BookId, date: Date = new Date()): Verse | null {
+  const pool = loadDaily().verses.filter((v) => v.book === bookId);
   if (pool.length === 0) return null;
   const daysSinceEpoch = Math.floor(date.getTime() / (1000 * 60 * 60 * 24));
-  const index = daysSinceEpoch % pool.length;
-  return pool[index];
+  return pool[daysSinceEpoch % pool.length];
 }
 
 // Translation resolution — given a user's preferred translation/language,
@@ -226,4 +262,32 @@ export function verseShortLabel(verse: Verse): string {
     case 'mahabharata':
       return `MBh ${verse.parva}.${verse.chapter}.${verse.verse}`;
   }
+}
+
+// Verse ids encode their own location (gita_2_47, ramayana_1_2_15 =
+// kanda_sarga_verse, mbh_2_43_1 = parva_adhyaya_verse), so a position can be
+// labelled or opened without loading the book it belongs to.
+export function parseVerseId(
+  id: string
+): { book: BookId; chapter: number; sub?: number; verse: number } | null {
+  const parts = id.split('_');
+  const nums = parts.slice(1).map(Number);
+  if (nums.some((n) => !Number.isFinite(n))) return null;
+  if (parts[0] === 'gita' && nums.length === 2) return { book: 'gita', chapter: nums[0], verse: nums[1] };
+  if (parts[0] === 'ramayana' && nums.length === 3)
+    return { book: 'ramayana', chapter: nums[0], sub: nums[1], verse: nums[2] };
+  if (parts[0] === 'mbh' && nums.length === 3)
+    return { book: 'mahabharata', chapter: nums[0], sub: nums[1], verse: nums[2] };
+  return null;
+}
+
+// "Chapter 2 · Verse 47", "Bala Kanda · Sarga 2, verse 15",
+// "Sabha Parva · Adhyaya 43, verse 1".
+export function positionLabel(id: string): string | null {
+  const p = parseVerseId(id);
+  if (!p) return null;
+  if (p.book === 'gita') return `Chapter ${p.chapter} · Verse ${p.verse}`;
+  const name = getChapter(p.book, p.chapter)?.name ?? `${getBookMeta(p.book).structure_label} ${p.chapter}`;
+  const unit = p.book === 'ramayana' ? 'Sarga' : 'Adhyaya';
+  return p.verse === 0 ? `${name} · ${unit} ${p.sub}, invocation` : `${name} · ${unit} ${p.sub}, verse ${p.verse}`;
 }
