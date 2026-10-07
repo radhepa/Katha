@@ -328,8 +328,11 @@ export function ReaderScreen() {
     [verses.length, renderLimit, markVisible, updateCurrentVerse, activeBookId, setBarHidden]
   );
 
+  // Rows report y relative to the text column, which starts BAR_H down the
+  // scroll content (the padding under the floating bar). Store content-space y
+  // so jumps, the verse counter and read-marking all line up with scrollY.
   const onRowLayout = useCallback((index: number, y: number) => {
-    offsets.current[index] = y;
+    offsets.current[index] = y + BAR_H;
   }, []);
 
   const onPressExplain = useCallback((verse: Verse) => {
